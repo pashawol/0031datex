@@ -278,7 +278,7 @@ function eventHandler() {
 		loopHorizontal: true,
 		// responsiveWidth: 1200, 
 		// responsiveHeight: 600,
-		responsiveHeight: 1200,
+		responsiveHeight: 600,
 		animateAnchor: true,
 		navigation: true,
 		navigationPosition: 'right',
