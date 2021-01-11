@@ -61,6 +61,7 @@
   "optionalDependencies": {},
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "fullpage.js": "^3.0.9",
     "inputmask": "^5.0.5",
     "jquery": "^3.5.1",
     "loading-attribute-polyfill": "^1.5.4",

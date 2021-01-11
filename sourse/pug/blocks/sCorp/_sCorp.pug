@@ -1,0 +1,24 @@
+mixin sCorp(data)
+	// start sCorp
+	+b.SECTION.sCorp.section#sCorp&attributes(attributes)
+		+b.section-inner
+			.container 
+				.row 
+					.sp-block.section-inner__col.sp-block.section-inner__col--right.col-lg-6
+						.sub-title корп версия
+						h2 BIG BOSS <br> бухгалтерии
+						+pic('corp-img.png','','768px').d-block.d-md-none.d-lg-block.pic-abs
+						p Программа обладает широким функционалом, который позволит вести учет доходов и&nbsp;расходов, а&nbsp;также фактической прибыли по&nbsp;каждому обособленному подразделению. Теперь налоговая декларация по&nbsp;налогу на&nbsp;прибыль и&nbsp;отчетность некредитных финансовых организаций заполняется автоматически. Вы&nbsp;сможете вести и&nbsp;консолидировать учет НДС у&nbsp;экспедиторов, а&nbsp;также выполнять расчеты по&nbsp;контрактам для выполнения государственного заказа.
+						.row.align-items-center.justify-content-lg-start.justify-content-center
+					 
+							.col-auto
+								+b.price--new 33 600 ₽
+						.row.align-items-center.justify-content-lg-start.justify-content-center
+							.col-auto
+								a.btn.btn-y(href="#") купить
+							.col-auto
+								a.btn-compare(href="#")
+									.gumburger
+										span
+									| Сравнить версии
+	// end sCorp

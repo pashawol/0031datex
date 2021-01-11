@@ -1,4 +1,16 @@
 mixin footer()
 	+b.FOOTER.footer.block-with-lazy
 		.container
-			h2 footer
+			.row
+				+e.col.col-xlg-auto
+					+soc()
+				+e.col.col-xlg-auto
+					+e.text: +e.text.strong(href="tel:8(800)500-57-48") 8 (800) 500-57-48
+				 
+					+e.text-gray(href="mailto:info@datexsoft.ru") info@datexsoft.ru
+				+e.col.col-xlg-auto
+					+e.text г. Самара, Партизанская ул, дом № 86, офис 723
+					+e.text-gray Пн-Пт с 9:00 до 18:00
+				+e.col.col-xlg-auto
+					+e.text © Datexsoft 2020. Все права защищены.
+					+e.text-gray(href="#") Политика конфиденциальности

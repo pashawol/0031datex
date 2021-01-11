@@ -1,0 +1,23 @@
+mixin sFaq(data)
+	// start sFaq
+	+b.SECTION.sFaq.section#sFaq&attributes(attributes)
+		.section-inner.sp-block
+			.container
+				//- +pic("box-1.png").box.box--left.d-none.d-lg-block
+				//- +pic("box-2.png").box.box--right.d-none.d-lg-block
+				.sub-title FAQ
+				h2 Остались вопросы, <br> на&nbsp;которые нужны ответы?
+				.row
+					mixin item(t)
+						+e.col.col-xl-6
+							+e.item(href="#")!= t
+								+icon('arrow-right')
+					+item(`На что их можно потратить подарочные часы?`)
+					+item(`Кому нужна 1С Бухгалтерия 8?`)
+					+item(`Что такое ИТС и зачем оно нужно?`)
+					+item(`Какие преимущества программы 1С Бухгалтерия 8?`)
+					+item(`Как записаться на демонстрацию продукта?`)
+					+item(`Как записаться на демонстрацию продукта?`)
+				a.btn.btn-y(href="#") ЗАДАТЬ СВОЙ ВОПРОС
+		
+	// end sFaq

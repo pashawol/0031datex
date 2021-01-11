@@ -1,22 +1,36 @@
  
 	  
 .soc{
-	margin: 0 rem(-5px);
+	margin: 0 rem(-15px);
 	display: flex;
+	@include media-breakpoint-up(xxl) {
+
+		padding-right: rem(70);
+	}
 	&__item{
 		text-decoration: none !important;
-		margin: 0 rem(5px);
+		margin: 0 rem(15px);
 		vertical-align: middle;
 		@include mt;
-		display: block;
-		&:hover{
-		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
-			opacity: .6 ;
+		display: block; 
+		color:var(--blockColor);
+		&--vk:hover{
+			color: #2787F5;
 		}
 		
+		&--instagram:hover{
+			color: #D92C7D;
+		}
+		&--telegram:hover{
+			color:#27A5E4;
+		}
+		&--twitter:hover{
+			color: #1DA1F2;
+		}
+
 	}
 	.icon{
-	font-size: rem(30);
+	font-size: rem(24);
 	}
 	 
 

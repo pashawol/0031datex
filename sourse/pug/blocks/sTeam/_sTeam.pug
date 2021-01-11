@@ -1,0 +1,28 @@
+mixin sTeam(data)
+	// start sTeam
+	+b.SECTION.sTeam.section#sTeam&attributes(attributes)
+		.section-inner.sp-block
+			.container 
+				h2.text-center В&nbsp;нашей команде работают 
+					span програмисты-бухгалтеры
+					
+				.row
+					mixin item(i,name, n, p)
+						+e.col.col-6
+							+e.item.row
+								.col-lg-auto
+									+e.img-wrap
+										+pic(`team-${i}.png`,'',0)
+								.col
+									+e.name= name
+									ul
+										li Бесплатно доставим
+										li Бесплатно установим
+										li Гарантия и бонусы
+									+e.foot
+										+e.number= n
+										p!= p
+					+item(`1`,`всеволод лысиков`,`207`,`внедрений бухгалтерии на&nbsp;счету Всеволода`)
+					+item(`2`,`валентин шуба`,`57`,`внедрений бухгалтерии на&nbsp;счету Валентина`)
+
+	// end sTeam

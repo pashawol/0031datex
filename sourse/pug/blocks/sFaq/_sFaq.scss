@@ -1,0 +1,56 @@
+
+	// start .sFaq
+	.sFaq { 
+		h2{
+			max-width: none !important;
+			@include media-breakpoint-only(xl){
+				margin-bottom: calc(var(--sp) + #{rem(24px)}); 
+			}
+			margin-bottom: calc(var(--sp) + #{rem(54px)});
+		}
+		.section-inner{
+			text-align: center;
+		}
+
+		&__item{
+			text-align: left;
+			// display: block;
+			display: flex;
+			justify-content: space-between;
+			padding: rem(20) rem(30);
+			@include rfs(20px);
+			border-top: 1px solid #EBEBF3;
+			border-bottom: 1px solid #EBEBF3;
+			margin-top: -1px;
+
+			.icon{
+				font-size: rem(30);
+				margin-left: rem(10);
+				color: $light;
+				@include mt;
+			}
+		 
+			color: var(--blockColor);
+			&:hover{
+				.icon{
+					color: $primary;
+				}
+				color: $primary;
+			}
+			
+		}
+		.btn{
+			margin-top: calc(var(--sp) + #{rem(70px)});
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sFaq

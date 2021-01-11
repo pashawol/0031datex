@@ -1,10 +1,21 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+	+b.headerBlock.section.section--dark.bg-wrap#headerBlock&attributes(attributes)
+		+pic("head-bg.png",'bg').picture-bg
+		.section-inner
+			.container 
+				.row
+					.sp-block.section-inner__col.col-lg-6
+						.sub-title  доступно и всерьез
+						h1 1С&nbsp;Бухгалтерия&nbsp;8 в&nbsp;Самаре
+						ul
+							li Бесплатно доставим
+							li Бесплатно установим
+							li Гарантия и бонусы
+						p Автоматизируйте бухгалтерский и&nbsp;налоговый отчет, рассчитывайте зарплату быстро и&nbsp;без задержек, ведите правильный учет с&nbsp;помощью 1С&nbsp;Бухгалтерия&nbsp;8
+						a.btn.btn-y(href="#") Подобрать программу
+					.col.d-none.d-lg-block
+						+pic('head-img.png','',0)
+		.btn-next
+			+icon('mouse')
 	// end headerBlock

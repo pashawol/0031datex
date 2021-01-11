@@ -23,8 +23,11 @@ html(lang="ru")
 		meta(name="description", content="о чем страница")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		//- meta(name="viewport", content="width=device-width, shrink-to-fit=no")
-		//- meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,  shrink-to-fit=no")
-		meta(name="viewport", content="width=device-width,initial-scale=1.0")
+		//- meta(name="viewport", content="width=576, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		//- <meta content="width=576, initial-scale=1, maximum-scale=1.0,   user-scalable=no " name="viewport">
+		<meta content="width=570,  maximum-scale=1.0, user-scalable=no  "   name="viewport">
+		//- <meta name="viewport" content="width=576, initial-scale=1, maximum-scale=1, minimum-scale=1  user-scalable=1">
+		//- meta(name="viewport", content="width=device-width,initial-scale=1.0")
 		link(type="image/ico", href='img/favicon.ico', rel='shortcut icon') 
 		<meta name="format-detection" content="telephone=no"> 
 		+allcss()
@@ -33,10 +36,9 @@ html(lang="ru")
 	//- 	.loaded_hiding {  opacity: 0; pointer-events: none;  } .loaded_hiding::before { display: none; }
 	//- body.loaded_hiding(class= mainPage) 
 	body(class= mainPage) 
-		.main-wrapper
-			.main-wrapper__inner 
-				block pagecontent
-					h3 content
+		.main-wrapper#fullpage
+			block pagecontent
+				h3 content
 		+modal()
 		+allcjs()
 		

@@ -21,10 +21,10 @@ module.exports = function () {
 					width: '50%', quality: 75, progressive: true, rename: { prefix: '@1x/', }
 				},
 				{
-					width: '100%', quality: 90, progressive: true, rename: { prefix: '@2x/webp/', extname: '.webp', },
+					width: '100%', quality: 100, progressive: true, rename: { prefix: '@2x/webp/', extname: '.webp', },
 				},
 				{
-					width: '50%', quality: 90, progressive: true, rename: { prefix: '@1x/webp/', extname: '.webp', },
+					width: '50%', quality: 100, progressive: true, rename: { prefix: '@1x/webp/', extname: '.webp', },
 				},
 
 				]

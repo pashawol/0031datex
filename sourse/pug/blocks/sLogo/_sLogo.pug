@@ -1,0 +1,12 @@
+mixin sLogo(data)
+	// start sLogo
+	+b.SECTION.sLogo.section#sLogo&attributes(attributes)
+		.section-inner.sp-block
+			.container 
+				h2 к нам обратились
+				.row
+					- for (var x = 1; x < 9; x++)
+						.col-xl-3.col-lg-4.col-6
+							+pic(`logo-${x}.png`,'',0)
+				a.btn.btn-y(href="#") стать клиентом
+	// end sLogo

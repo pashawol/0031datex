@@ -21,10 +21,19 @@ mixin top-nav()
 	+b.top-nav.block-with-lazy
 		.container
 			.row
-				.col-auto.d-lg-none
+				.col-xl-auto.col
+					a(href="/")
+						+logo()
+				.col.d-none.d-xl-block
+					+mnu()
+				.col-auto
+					+e.tel(href="tel:8(800)500-57-48")
+						+icon('call')
+						| 8 (800) 500-57-48
+				.col-auto.d-none.d-md-block
+					+e.btn(href="#") Заказать звонок
+				.col-auto.d-xl-none
 					+b.toggle-menu-mobile--js
 						span
-				.col
-					+mnu()
-					
+				
 	// end top-nav

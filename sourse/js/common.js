@@ -153,50 +153,7 @@ const JSCCommon = {
 			document.body.insertAdjacentHTML("beforeend", '<div class="browsehappy">	<p class=" container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p></div>');
 		}
 	},
-	sendForm() {
-		var gets = (function () {
-			var a = window.location.search;
-			var b = new Object();
-			var c;
-			a = a.substring(1).split("&");
-			for (var i = 0; i < a.length; i++) {
-				c = a[i].split("=");
-				b[c[0]] = c[1];
-			}
-			return b;
-		})();
-		// form
-		$(document).on('submit', "form", function (e) {
-			e.preventDefault();
-			const th = $(this);
-			var data = th.serialize();
-			th.find('.utm_source').val(decodeURIComponent(gets['utm_source'] || ''));
-			th.find('.utm_term').val(decodeURIComponent(gets['utm_term'] || ''));
-			th.find('.utm_medium').val(decodeURIComponent(gets['utm_medium'] || ''));
-			th.find('.utm_campaign').val(decodeURIComponent(gets['utm_campaign'] || ''));
-			$.ajax({
-				url: 'action.php',
-				type: 'POST',
-				data: data,
-			}).done(function (data) {
 
-				$.fancybox.close();
-				$.fancybox.open({
-					src: '#modal-thanks',
-					type: 'inline'
-				});
-				// window.location.replace("/thanks.html");
-				setTimeout(function () {
-					// Done Functions
-					th.trigger("reset");
-					// $.magnificPopup.close();
-					// ym(53383120, 'reachGoal', 'zakaz');
-					// yaCounter55828534.reachGoal('zakaz');
-				}, 4000);
-			}).fail(function () { });
-
-		});
-	},
 	heightwindow() {
 		// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 		let vh = window.innerHeight * 0.01;
@@ -235,7 +192,6 @@ function eventHandler() {
 	JSCCommon.tabscostume('.tabs--js');
 	JSCCommon.mobileMenu();
 	JSCCommon.inputMask();
-	JSCCommon.sendForm();
 	JSCCommon.heightwindow();
 	JSCCommon.animateScroll();
 
@@ -248,12 +204,12 @@ function eventHandler() {
 	}
 
 	function whenResize() {
-		const topH = document.querySelector("header ").offsetHeight;
-		if ($(window).scrollTop() > topH) {
-			document.querySelector('.top-nav  ').classList.add('fixed');
-		} else {
-			document.querySelector('.top-nav  ').classList.remove('fixed');
-		}
+		// const topH = document.querySelector("header ").offsetHeight;
+		// if ($(window).scrollTop() > topH) {
+		// 	document.querySelector('.top-nav  ').classList.add('fixed');
+		// } else {
+		// 	document.querySelector('.top-nav  ').classList.remove('fixed');
+		// }
 
 	}
 
@@ -270,35 +226,90 @@ function eventHandler() {
 		lazy: {
 			loadPrevNext: true,
 		},
-		watchOverflow: true,
-		spaceBetween: 0,
-		loop: true,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		pagination: {
-			el: ' .swiper-pagination',
-			type: 'bullets',
-			clickable: true,
-			// renderBullet: function (index, className) {
-			// 	return '<span class="' + className + '">' + (index + 1) + '</span>';
-			// }
-		},
+		watchOverflow: true, 
+	
+		// pagination: {
+		// 	el: ' .swiper-pagination',
+		// 	type: 'bullets',
+		// 	clickable: true,
+		// 	// renderBullet: function (index, className) {
+		// 	// 	return '<span class="' + className + '">' + (index + 1) + '</span>';
+		// 	// }
+		// },
 	}
 
-	const swiper4 = new Swiper('.sBanners__slider--js', {
+	const swiper4 = new Swiper('.sRew__slider--js', {
 		// slidesPerView: 5,
 		...defaultSl,
-		slidesPerView: 'auto',
-		freeMode: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
+		slidesPerView: 1, 
+		spaceBetween: 20,
 		slideToClickedSlide: true,
 		freeModeMomentum: true,
-
+		navigation: {
+			nextEl: '.sRew .swiper-button-next',
+			prevEl: '.sRew .swiper-button-prev',
+		},
+				pagination: {
+			el: '.sRew .swiper-pagination',
+			type: 'bullets',
+			clickable: true, 
+		},
+		breakpoints: { 
+			768: {
+				slidesPerView: 4,
+				spaceBetween: 30
+			}, 
+			992: {
+				slidesPerView: 4,
+				spaceBetween: 60
+			},
+			1200: {
+				slidesPerView: 4,
+				spaceBetween: 110
+			}
+		}
 	});
 	// modal window
+
+
+
+	$('#fullpage').fullpage({
+		scrollingSpeed: 800,
+		loopHorizontal: true,
+		// responsiveWidth: 1200, 
+		// responsiveHeight: 600,
+		responsiveHeight: 1200,
+		animateAnchor: true,
+		navigation: true,
+		navigationPosition: 'right',
+		recordHistory: false,
+		// verticalCentered: false,
+		fixedElements: '.top-nav',
+		scrollBar: true,
+		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+		afterLoad: function(origin, destination, direction){
+			var loadedSection = destination.item;
+			// console.log(this);
+			if(loadedSection.classList.contains('section--dark') ) {
+				document.documentElement.style.setProperty('--blockColor', `#fff`)  
+			} else{
+				document.documentElement.style.removeProperty('--blockColor') 
+
+				// console.log('#1C1C24');
+			}
+
+	 },
+		// continuousVertical: true,
+		// autoScrolling: true,
+		// scrollOverflow: true,
+		// scrollOverflowReset: true,
+		// scrollOverflowReset: true,
+		afterRender: function () {
+			// var rellax = new Rellax('.rellax', {});
+			// wow.init();
+
+		},
+	});
 
 };
 if (document.readyState !== 'loading') {

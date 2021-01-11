@@ -1,0 +1,24 @@
+mixin sProf(data)
+	// start sProf
+	+b.SECTION.sProf.section#sProf&attributes(attributes)
+		+b.section-inner
+			.container 
+				.row 
+					.sp-block.section-inner__col.section-inner__col--right.col-lg-6
+						.sub-title проф версия
+						h2 Больше возможностей
+						+pic('prof-img.png','','768px').d-block.d-md-none.d-lg-block.pic-abs
+						p Измененяйте программу под потребности вашей фирмы, и&nbsp;ведите учет сразу по&nbsp;нескольким организациям и&nbsp;ИП. Программа позволит поддержку и&nbsp;использование с&nbsp;другими конфигурациями, например: 1С&nbsp;Управление торговлей 8, 1С&nbsp;Зарплата и&nbsp;управление персоналом&nbsp;8.
+						.row.align-items-center.justify-content-lg-start.justify-content-center
+					 
+							.col-auto
+								+b.price--new 13 000 ₽
+						.row.align-items-center.justify-content-lg-start.justify-content-center
+							.col-auto
+								a.btn.btn-y(href="#") купить
+							.col-auto
+								a.btn-compare(href="#")
+									.gumburger
+										span
+									| Сравнить версии
+	// end sProf

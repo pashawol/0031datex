@@ -1,0 +1,34 @@
+mixin sGift(data)
+	// start sGift
+	+b.SECTION.sGift--1.section#sGift2&attributes(attributes)
+		.section-inner.sp-block
+			.container
+				+pic("box-1.png").box.box--left.d-none.d-lg-block
+				+pic("box-2.png").box.box--right.d-none.d-lg-block
+				.sub-title при покупке проф и корп версий
+				h2 дарим бесплатные 3&nbsp;часа работы специалиста
+				p На что их можно потратить?
+				ul
+					li Обучение сотрудников программе 1С&nbsp;Бухгалтерия&nbsp;8
+					li Выбрать любую услугу DATEX в&nbsp;рамках бесплатных часов
+				a.btn.btn-y(href="#") оставить заявку
+	// end sGift
+mixin sGift2(data)
+	// start sGift
+	+b.SECTION.sGift--2.section#sGift&attributes(attributes)
+		.section-inner.sp-block
+			.container
+				//- +pic("box-1.png").box.box--left.d-none.d-lg-block
+				//- +pic("box-2.png").box.box--right.d-none.d-lg-block
+				.sub-title информационно-технологическое сопровождение
+				h2 дарим 4&nbsp;месяца бесплатного обслуживания
+				p При покупке годового обслуживания 1С: ИТС в&nbsp;компании DATEX 
+				.row.align-items-center.justify-content-center
+					.col-auto
+						+b.price.text-primary.ttu 12 месяцев
+					.col-auto
+						+b.price--last.ttu 26 400 ₽
+					.col-auto
+						+b.price--new.ttu 21 840 ₽
+				a.btn.btn-y(href="#") оставить заявку
+	// end sGift

@@ -1,0 +1,17 @@
+mixin sDemo(data)
+	// start sDemo
+	+b.SECTION.sDemo.section#sDemo&attributes(attributes)
+		+b.section-inner
+			.container 
+				.row 
+					.sp-block.section-inner__col.col-lg-6
+						.sub-title посмотрите изнутри
+						h2 бесплатная <br> демонстрация
+						+b.video-block.d-block.d-md-none.d-lg-block
+							+pic('video.png').video-bg
+							+pic('mac.png').mac-block
+						p Наши специалисты проведут для вас бесплатную демонстрацию любой версии в&nbsp;онлайн режиме или приедет к&nbsp;вам в&nbsp;офис в&nbsp;удобное для вас время.
+						.row.align-items-center.justify-content-lg-start.justify-content-center
+							.col-auto
+								a.btn.btn-y(href="#") бесплатная демонстрация
+	// end sDemo

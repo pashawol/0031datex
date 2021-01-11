@@ -1,0 +1,16 @@
+mixin sApplication(data)
+	// start sApplication
+	+b.SECTION.sApplication.section#sApplication&attributes(attributes)
+		+b.section-inner
+			.container 
+				.row 
+					.sp-block.section-inner__col.col-xlg-6
+						.sub-title свяжитесь с нами
+						h2 оставьте заявку <br> на&nbsp;консультацию
+						+pic('phone.png','','768px').d-block.d-md-none.d-xlg-block.pic-abs
+						p Наш специалист свяжется с&nbsp;вами и&nbsp;предложит лучшее решение для&nbsp;Вас&nbsp;и&nbsp;вашего предприятия
+						.row.align-items-center.justify-content-xlg-start.justify-content-center
+							.col-auto
+								a.btn.btn-y(href="#") оставить заявку
+			block
+	// end sApplication

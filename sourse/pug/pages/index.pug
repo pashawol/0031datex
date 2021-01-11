@@ -3,6 +3,18 @@ extends layout/main.pug
 
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
+include ../blocks/sBase/_sBase.pug
+include ../blocks/sProf/_sProf.pug
+include ../blocks/sCorp/_sCorp.pug
+include ../blocks/sWhy/_sWhy.pug
+include ../blocks/sStart/_sStart.pug
+include ../blocks/sTeam/_sTeam.pug
+include ../blocks/sDemo/_sDemo.pug
+include ../blocks/sRew/_sRew.pug
+include ../blocks/sGift/_sGift.pug
+include ../blocks/sLogo/_sLogo.pug
+include ../blocks/sFaq/_sFaq.pug
+include ../blocks/sApplication/_sApplication.pug
 
 block variables
 	- let  mainPage= null
@@ -12,13 +24,22 @@ block title
 block pagecontent
 
 	+mob-mnu()
-	+header()
 	+top-nav()
-	+topLine() 
 	+headerBlock()
-	+sForm()
-	+sContact()
-	+footer()
+	+sBase
+	+sProf().section--dark
+	+sCorp
+	+sWhy().section--dark
+	+sStart
+	+sTeam().section--dark
+	+sDemo
+	+sRew().section--dark
+	+sGift
+	+sLogo().section--dark
+	+sGift2
+	+sFaq
+	+sApplication().section--dark
+		+footer()
 
 
 	

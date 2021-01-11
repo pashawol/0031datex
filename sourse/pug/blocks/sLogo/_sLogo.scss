@@ -1,0 +1,53 @@
+
+	// start .sLogo
+	.sLogo {
+		.section-inner{
+			text-align: center;
+			// padding-top: rem(200);
+			h2{
+				max-width: none !important;
+				@include media-breakpoint-only(xl){
+					margin-bottom: calc(var(--sp) + #{rem(24px)}); 
+				}
+				margin-bottom: calc(var(--sp) + #{rem(54px)});
+			}
+		}
+		.row{
+			justify-content: center;
+		}
+		picture{
+			border: 2px solid transparent;
+			@include mt;
+			&:hover{
+				border: 2px solid #00F0FF; 
+				background: rgba(0, 240, 255, 0.1);
+				box-shadow: 0px 5px 50px rgba(0, 240, 255, 0.05);
+			} 
+			border-radius: 12px;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: rem(20) rem(20);
+			height: rem(130);
+			margin-bottom: var(--bs-gutter-x);
+			img{
+				flex: 0 0 auto;
+			}
+		}
+
+		.btn{
+			margin-top: calc(var(--sp) + #{rem(54px)});
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sLogo

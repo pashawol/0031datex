@@ -12,12 +12,24 @@ include components/btn.pug
 
 mixin arrow()
 	.swiper-button-hand.swiper-button-hand-prev.swiper-button-prev
-		+icon('chevron-left')
+		+icon('arrow-left')
 	.swiper-button-hand.swiper-button-hand-next.swiper-button-next
-		+icon('chevron-right')
+		+icon('arrow-right')
 //- /arrow for swiper-slider
 
 mixin ie11()
 	//- modernizer and for ie11
 	 
 	<!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
+
+mixin logo()
+	<svg width="161" height="28" class="logo-icon" viewBox="0 0 161 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M20.679 0.0288086C30.875 0.0288086 39.8994 3.18941 39.8994 13.9929C39.8994 24.7964 30.9067 27.957 20.679 27.957H11.7812V0.0288086H20.679ZM20.8373 5.91901H19.1591V22.0955H20.8373C26.252 22.0955 32.1099 21.4921 32.1099 14.0216C32.1099 6.49367 26.252 5.91901 20.8373 5.91901Z" fill="var(--blockColor, white)"/>
+		<path d="M52.1863 0.0288086H60.2608L72.1034 27.9857H64.0605L62.0973 22.9288H50.1598L48.1966 27.9857H40.3438L52.1863 0.0288086ZM52.4713 17.0673H59.8492L56.1761 7.49931L52.4713 17.0673Z" fill="var(--blockColor, white)"/>
+		<path d="M82.108 5.91901H72.0703V0.0288086H99.5235V5.91901H89.4542V27.9857H82.0763V5.91901H82.108Z" fill="var(--blockColor, white)"/>
+		<path d="M102.625 0.0288086H126.627V5.91901H110.003V10.6886H125.677V16.5788H110.003V22.0955H126.627V27.9857H102.625V0.0288086Z" fill="var(--blockColor, white)"/>
+		<path d="M139.642 13.7342L128.401 0H137.109L143.98 8.41868L150.946 0H159.495L148.254 13.648L160.002 27.9569H151.358L143.885 18.9061L136.412 27.9569H127.926L139.642 13.7342Z" fill="var(--blockColor, white)"/>
+		<path d="M7.88449 20.8311H0V27.9855H7.88449V20.8311Z" fill="#FF294A"/>
+		<path d="M7.88449 10.4302H0V17.5846H7.88449V10.4302Z" fill="var(--blockColor, white)"/>
+		<path d="M7.88449 0.0288086H0V7.18325H7.88449V0.0288086Z" fill="var(--blockColor, white)"/>
+		</svg>

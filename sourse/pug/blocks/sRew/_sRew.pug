@@ -1,0 +1,17 @@
+mixin sRew(data)
+	// start sRew
+	+b.SECTION.sRew.section#sRew&attributes(attributes)
+		.container.sp-block
+			h2
+				span Что думают наши&nbsp;клиенты
+				|  о&nbsp;1С&nbsp;Бухгалтерия&nbsp;8
+			+e.slider-wrap
+				+e.slider--js.swiper-container
+					.swiper-wrapper
+						- for (var x = 1; x < 5; x++)
+							+e.slide.swiper-slide
+								+e.img-wrap
+									img.swiper-lazy.res-i(src="#" data-src=`img/@2x/rew-${x}.jpg`, alt="")
+				+arrow
+			.swiper-pagination
+	// end sRew

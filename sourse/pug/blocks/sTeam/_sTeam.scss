@@ -1,0 +1,111 @@
+
+	// start .sTeam
+	.sTeam {
+		@include media-breakpoint-up(lg) {
+			--imgW: #{rem(330px)};
+			--imgH: #{rem(460px)};
+		}
+		@include media-breakpoint-only(xl) {
+			--imgW: #{rem(330 * .8)};
+			--imgH: #{rem(460 * .8)};
+		}
+		@include media-breakpoint-between(lg, xl) {
+			--imgW: #{rem(99)};
+			--imgH: #{rem(138)};
+
+		} 
+		--imgW: #{rem(219)};
+			--imgH: #{rem(304)};
+		h2{
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 100%;
+			span{
+				display: inline-block;
+			}
+			@include media-breakpoint-only(xl){
+				margin-bottom: calc(var(--sp) + #{rem(24px)});
+
+			}
+			margin-bottom: calc(var(--sp) + #{rem(54px)});
+		}
+		&__item{
+			@include roww(rem(45));
+			align-items: center;
+			position: relative;
+		}
+		&__img-wrap{
+			picture{ 
+				@include media-breakpoint-up(lg){
+					margin: 0;
+				}
+				margin: 0 auto 44px;
+				width: var(--imgW);
+				height: var(--imgH);
+				line-height: var(--imgH);
+				vertical-align: bottom;
+				background: rgba(0, 240, 255, 0.1);
+				border: 2px solid #00F0FF;
+				box-sizing: border-box;
+				box-shadow: 0px 5px 50px rgba(0, 240, 255, 0.05);
+				border-radius: 0 12px;
+				position: relative;
+				overflow: hidden;
+				display: block;
+			}
+			img{
+				max-height: calc(100% - #{rem(14)});
+				// margin-bottom: 6px;
+			}
+		}
+		&__name{
+			@include rfs(22px);
+			font-weight: 600;
+			text-transform: uppercase;
+			margin-bottom: rem(30);
+		}
+		&__number{
+			@include rfs(45px);
+				font-weight: 600;
+		}
+		p{
+			max-width: rem(200);
+			margin-bottom: 0;
+		}
+		@include media-breakpoint-between(lg, xl) {
+		 
+			&__item{
+				padding-bottom: rem(90);
+				align-items: start;
+			}
+			&__foot{
+				position: absolute;
+				left: calc(var(--bs-gutter-x)  / 2);
+				bottom: 0;
+			}
+		}
+
+		ul{
+			text-align: left;
+			@include media-breakpoint-down(lg) {
+				margin-bottom: 0;
+				// padding-bottom: 0;
+			}
+			@include media-breakpoint-down(lg){
+				margin-left: auto;
+				margin-right: auto;
+				max-width: rem(190);
+			}
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sTeam

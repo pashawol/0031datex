@@ -1,0 +1,26 @@
+mixin sBase(data)
+	// start sBase
+	+b.SECTION.sBase.section#sBase&attributes(attributes)
+		+b.section-inner
+			.container 
+				.row 
+					.sp-block.section-inner__col.sp-block.section-inner__col--right.col-lg-6
+						.sub-title  базовая версия
+						h2 отчеты – <br> это просто
+						+pic('base-img.png','','768px').d-block.d-md-none.d-lg-block.pic-abs
+						p Программа поможет и&nbsp;подскажет, как правильно вести бухгалтерский и&nbsp;налоговый отчет, а&nbsp;также обязательную отчетность, в&nbsp;соответсвии с&nbsp;законными требованиями. Рекомендуем базовую версию для организаций, в&nbsp;которых с&nbsp;программой работает один бухгалтер, а&nbsp;также для&nbsp;ИП, применяющих общую, упрощенную или патентную систему налогообложения.
+						.row.align-items-center.justify-content-lg-start.justify-content-center
+							.col-auto
+								+b.price--last 5 400 ₽
+							.col-auto
+								+b.price--new 1 650 ₽
+									+e.label(data-text="Условия акции уточняйте у менеджера") ?
+						.row.align-items-center.justify-content-lg-start.justify-content-center
+							.col-auto
+								a.btn.btn-y(href="#") купить
+							.col-auto
+								a.btn.btn-compare(href="#")
+									.gumburger
+										span
+									| Сравнить версии
+	// end sBase

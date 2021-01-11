@@ -1,0 +1,47 @@
+
+	// start .sApplication
+	.sApplication {
+		@include media-breakpoint-up(xl) {
+
+			--sPB: #{rem(140)};
+		}
+		p{
+			margin-bottom: rem(50);
+		}
+
+		.pic-abs{  
+			@include media-breakpoint-up(xxl) { 
+					min-height: rem(813);
+					min-width: rem(813); 
+					left: 90%;
+			}
+			@include media-breakpoint-up(md){ 
+				height: rem(813 * .8);
+					width: rem(813 * .8); 
+		 
+		}
+	}
+		 
+	@include media-breakpoint-up(xl) {
+		h2{
+			// margin-right: -40px;
+		}
+	}
+	h2{
+		max-width: none;
+	}
+	@include media-breakpoint-down(xlg) { 
+		.section-inner{
+			text-align: center;
+		}
+	}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sApplication

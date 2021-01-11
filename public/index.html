@@ -4,126 +4,688 @@
 		<meta charset="utf-8">
 		<title>title</title>
 		<meta name="description" content="о чем страница">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta content="width=570,  maximum-scale=1.0, user-scalable=no  "   name="viewport">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link href="libs/fullpage.js/fullpage.min.css" rel="stylesheet"/>
+		<link href="libs/swiper/css/swiper.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/fancybox/jquery.fancybox.min.css" rel="stylesheet"/>
 		<link href="css/main.min.css" rel="stylesheet"/>
 	</head>
 	<body> 
-		<div class="main-wrapper">
-			<div class="main-wrapper__inner"> 
-				<div class="menu-mobile menu-mobile--js d-lg-none">
-					<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
-					</div>
-					<div class="menu-mobile__inner">
-						<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#sContact" itemprop="url">Главная</a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Услуги  </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Подбор септика   </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Акции </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> О компании  </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Доставка и оплата </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Клиентам  </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Наши работы   </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#sContact" itemprop="url">Контакты </a>
-							</li>
-						</ul>
-						<div class="text-right"></div>
+		<div class="main-wrapper" id="fullpage">
+			<div class="menu-mobile menu-mobile--js d-lg-none">
+				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+				</div>
+				<div class="menu-mobile__inner">
+					<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
+						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Облачная версия</a></li>
+						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Демонстрация</a></li>
+						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Отзывы</a></li>
+						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">FAQ</a></li>
+						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Консультация</a></li>
+					</ul>
+					<div class="text-right"></div>
+				</div>
+			</div>
+			<!--  мобильное меню-->
+			<!-- start top-nav-->
+			<div class="top-nav block-with-lazy">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-auto col"><a href="/"><svg width="161" height="28" class="logo-icon" viewBox="0 0 161 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.679 0.0288086C30.875 0.0288086 39.8994 3.18941 39.8994 13.9929C39.8994 24.7964 30.9067 27.957 20.679 27.957H11.7812V0.0288086H20.679ZM20.8373 5.91901H19.1591V22.0955H20.8373C26.252 22.0955 32.1099 21.4921 32.1099 14.0216C32.1099 6.49367 26.252 5.91901 20.8373 5.91901Z" fill="var(--blockColor, white)"/>
+<path d="M52.1863 0.0288086H60.2608L72.1034 27.9857H64.0605L62.0973 22.9288H50.1598L48.1966 27.9857H40.3438L52.1863 0.0288086ZM52.4713 17.0673H59.8492L56.1761 7.49931L52.4713 17.0673Z" fill="var(--blockColor, white)"/>
+<path d="M82.108 5.91901H72.0703V0.0288086H99.5235V5.91901H89.4542V27.9857H82.0763V5.91901H82.108Z" fill="var(--blockColor, white)"/>
+<path d="M102.625 0.0288086H126.627V5.91901H110.003V10.6886H125.677V16.5788H110.003V22.0955H126.627V27.9857H102.625V0.0288086Z" fill="var(--blockColor, white)"/>
+<path d="M139.642 13.7342L128.401 0H137.109L143.98 8.41868L150.946 0H159.495L148.254 13.648L160.002 27.9569H151.358L143.885 18.9061L136.412 27.9569H127.926L139.642 13.7342Z" fill="var(--blockColor, white)"/>
+<path d="M7.88449 20.8311H0V27.9855H7.88449V20.8311Z" fill="#FF294A"/>
+<path d="M7.88449 10.4302H0V17.5846H7.88449V10.4302Z" fill="var(--blockColor, white)"/>
+<path d="M7.88449 0.0288086H0V7.18325H7.88449V0.0288086Z" fill="var(--blockColor, white)"/>
+</svg></a></div>
+						<div class="col d-none d-xl-block">
+							<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Облачная версия</a></li>
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Демонстрация</a></li>
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Отзывы</a></li>
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">FAQ</a></li>
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Консультация</a></li>
+							</ul>
+						</div>
+						<div class="col-auto"><a class="top-nav__tel" href="tel:8(800)500-57-48">
+							<svg class="icon icon-call ">
+								<use xlink:href="img/svg/sprite.svg#call"></use>
+							</svg>8 (800) 500-57-48</a>
+						</div>
+						<div class="col-auto d-none d-md-block"><a class="top-nav__btn" href="#">Заказать звонок</a>
+						</div>
+						<div class="col-auto d-xl-none">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+							</div>
+						</div>
 					</div>
 				</div>
-				<!--  мобильное меню-->
-				<!-- start header-->
-				<header class="header" id="header">
-				</header>
-				<!-- end header-->
-				<!-- start top-nav-->
-				<div class="top-nav block-with-lazy">
-					<div class="container">
+			</div>
+			<!-- end top-nav-->
+			<!-- start headerBlock-->
+			<div class="headerBlock section section section--dark bg-wrap" id="headerBlock">
+				<!-- picture-->
+				<picture class="picture-bg"> 
+					<source type="image/webp" srcset="img/@2x/webp/head-bg.webp" media="(min-width:576px)"/>
+					<source type="image/webp" srcset="img/@1x/webp/head-bg.webp"/>
+					<source type="image/png" srcset="img/@2x/head-bg.png" media="(min-width:576px)"/>
+					<source type="image/png" srcset="img/@1x/head-bg.png"/><img class="object-fit-js" src="#" data-src="img/@2x/head-bg.png" alt=""/>
+				</picture>
+				<!-- /picture-->
+				<div class="section-inner">
+					<div class="container"> 
 						<div class="row">
-							<div class="col-auto d-lg-none">
-								<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+							<div class="sp-block section-inner__col col-lg-6">
+								<div class="sub-title"> доступно и всерьез</div>
+								<h1>1С&nbsp;Бухгалтерия&nbsp;8 в&nbsp;Самаре</h1>
+								<ul>
+									<li>Бесплатно доставим</li>
+									<li>Бесплатно установим</li>
+									<li>Гарантия и бонусы</li>
+								</ul>
+								<p>Автоматизируйте бухгалтерский и&nbsp;налоговый отчет, рассчитывайте зарплату быстро и&nbsp;без задержек, ведите правильный учет с&nbsp;помощью 1С&nbsp;Бухгалтерия&nbsp;8</p><a class="btn btn-y" href="#">Подобрать программу</a>
+							</div>
+							<div class="col d-none d-lg-block">
+								<!-- picture-->
+								<picture> 
+									<source type="image/webp" srcset="img/@2x/webp/head-img.webp"/><img src="#" data-src="img/@2x/head-img.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-next">
+					<svg class="icon icon-mouse ">
+						<use xlink:href="img/svg/sprite.svg#mouse"></use>
+					</svg>
+				</div>
+			</div>
+			<!-- end headerBlock-->
+			<!-- start sBase-->
+			<section class="sBase section" id="sBase">
+				<div class="section-inner">
+					<div class="container"> 
+						<div class="row"> 
+							<div class="sp-block section-inner__col sp-block section-inner__col--right col-lg-6">
+								<div class="sub-title"> базовая версия</div>
+								<h2>отчеты – <br> это просто</h2>
+								<!-- picture-->
+								<picture class="d-block d-md-none d-lg-block pic-abs"> 
+									<source type="image/webp" srcset="img/@2x/webp/base-img.webp" media="(min-width:768px)"/>
+									<source type="image/webp" srcset="img/@1x/webp/base-img.webp"/>
+									<source type="image/png" srcset="img/@2x/base-img.png" media="(min-width:768px)"/>
+									<source type="image/png" srcset="img/@1x/base-img.png"/><img src="#" data-src="img/@2x/base-img.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+								<p>Программа поможет и&nbsp;подскажет, как правильно вести бухгалтерский и&nbsp;налоговый отчет, а&nbsp;также обязательную отчетность, в&nbsp;соответсвии с&nbsp;законными требованиями. Рекомендуем базовую версию для организаций, в&nbsp;которых с&nbsp;программой работает один бухгалтер, а&nbsp;также для&nbsp;ИП, применяющих общую, упрощенную или патентную систему налогообложения.</p>
+								<div class="row align-items-center justify-content-lg-start justify-content-center">
+									<div class="col-auto">
+										<div class="price price--last">5 400 ₽
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="price price--new">1 650 ₽
+											<div class="price__label" data-text="Условия акции уточняйте у менеджера">?
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-lg-start justify-content-center">
+									<div class="col-auto"><a class="btn btn-y" href="#">купить</a></div>
+									<div class="col-auto"><a class="btn btn-compare" href="#">
+											<div class="gumburger"><span></span></div>Сравнить версии</a></div>
 								</div>
 							</div>
-							<div class="col">
-								<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#sContact" itemprop="url">Главная</a>
-									</li>
-									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Услуги  </a>
-									</li>
-									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Подбор септика   </a>
-									</li>
-									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Акции </a>
-									</li>
-									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> О компании  </a>
-									</li>
-									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Доставка и оплата </a>
-									</li>
-									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Клиентам  </a>
-									</li>
-									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Наши работы   </a>
-									</li>
-									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#sContact" itemprop="url">Контакты </a>
-									</li>
-								</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sBase-->
+			<!-- start sProf-->
+			<section class="sProf section section section--dark" id="sProf">
+				<div class="section-inner">
+					<div class="container"> 
+						<div class="row"> 
+							<div class="sp-block section-inner__col section-inner__col--right col-lg-6">
+								<div class="sub-title">проф версия</div>
+								<h2>Больше возможностей</h2>
+								<!-- picture-->
+								<picture class="d-block d-md-none d-lg-block pic-abs"> 
+									<source type="image/webp" srcset="img/@2x/webp/prof-img.webp" media="(min-width:768px)"/>
+									<source type="image/webp" srcset="img/@1x/webp/prof-img.webp"/>
+									<source type="image/png" srcset="img/@2x/prof-img.png" media="(min-width:768px)"/>
+									<source type="image/png" srcset="img/@1x/prof-img.png"/><img src="#" data-src="img/@2x/prof-img.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+								<p>Измененяйте программу под потребности вашей фирмы, и&nbsp;ведите учет сразу по&nbsp;нескольким организациям и&nbsp;ИП. Программа позволит поддержку и&nbsp;использование с&nbsp;другими конфигурациями, например: 1С&nbsp;Управление торговлей 8, 1С&nbsp;Зарплата и&nbsp;управление персоналом&nbsp;8.</p>
+								<div class="row align-items-center justify-content-lg-start justify-content-center">
+									<div class="col-auto">
+										<div class="price price--new">13 000 ₽
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-lg-start justify-content-center">
+									<div class="col-auto"><a class="btn btn-y" href="#">купить</a></div>
+									<div class="col-auto"><a class="btn-compare" href="#">
+											<div class="gumburger"><span></span></div>Сравнить версии</a></div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- end top-nav-->
-				<!-- start topLine-->
-				<section class="topLine section" id="topLine">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>topLine</h2>
+			</section>
+			<!-- end sProf-->
+			<!-- start sCorp-->
+			<section class="sCorp section" id="sCorp">
+				<div class="section-inner">
+					<div class="container"> 
+						<div class="row"> 
+							<div class="sp-block section-inner__col sp-block section-inner__col--right col-lg-6">
+								<div class="sub-title">корп версия</div>
+								<h2>BIG BOSS <br> бухгалтерии</h2>
+								<!-- picture-->
+								<picture class="d-block d-md-none d-lg-block pic-abs"> 
+									<source type="image/webp" srcset="img/@2x/webp/corp-img.webp" media="(min-width:768px)"/>
+									<source type="image/webp" srcset="img/@1x/webp/corp-img.webp"/>
+									<source type="image/png" srcset="img/@2x/corp-img.png" media="(min-width:768px)"/>
+									<source type="image/png" srcset="img/@1x/corp-img.png"/><img src="#" data-src="img/@2x/corp-img.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+								<p>Программа обладает широким функционалом, который позволит вести учет доходов и&nbsp;расходов, а&nbsp;также фактической прибыли по&nbsp;каждому обособленному подразделению. Теперь налоговая декларация по&nbsp;налогу на&nbsp;прибыль и&nbsp;отчетность некредитных финансовых организаций заполняется автоматически. Вы&nbsp;сможете вести и&nbsp;консолидировать учет НДС у&nbsp;экспедиторов, а&nbsp;также выполнять расчеты по&nbsp;контрактам для выполнения государственного заказа.</p>
+								<div class="row align-items-center justify-content-lg-start justify-content-center">
+									<div class="col-auto">
+										<div class="price price--new">33 600 ₽
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center justify-content-lg-start justify-content-center">
+									<div class="col-auto"><a class="btn btn-y" href="#">купить</a></div>
+									<div class="col-auto"><a class="btn-compare" href="#">
+											<div class="gumburger"><span></span></div>Сравнить версии</a></div>
+								</div>
+							</div>
 						</div>
-						<div class="row"></div>
-					</div>
-				</section>
-				<!-- end topLine-->
-				<!-- start headerBlock-->
-				<div class="headerBlock section" id="headerBlock">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>headerBlock ds dfsdfdsfsd</h2>
-						</div>
-						<div class="row"></div>
 					</div>
 				</div>
-				<!-- end headerBlock-->
-				<!-- start sForm-->
-				<section class="sForm section" id="sForm">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sForm</h2>
+			</section>
+			<!-- end sCorp-->
+			<!-- start sWhy-->
+			<section class="sWhy section section section--dark" id="sWhy">
+				<div class="section-inner">
+					<div class="container"> 
+						<div class="row"> 
+							<div class="sp-block section-inner__col col-lg-6"> 
+								<h2>почему выбирают <span>1с&nbsp;бухгалтерию&nbsp;8</span></h2>
+								<div class="why-list row">
+									<div class="why-list__item col-md-12 col-6">
+										<div class="row">
+											<div class="col-md-auto">
+												<div class="why-list__icon-wrap"><img src="img/svg/why-1.svg" alt=""/>
+												</div>
+											</div>
+											<div class="col">
+												<p class="ttu">законы</p>
+												<p>Учет в&nbsp;программе ведется согласно требованиям действующего законодательства&nbsp;РФ</p>
+											</div>
+										</div>
+									</div>
+									<div class="why-list__item col-md-12 col-6">
+										<div class="row">
+											<div class="col-md-auto">
+												<div class="why-list__icon-wrap"><img src="img/svg/why-2.svg" alt=""/>
+												</div>
+											</div>
+											<div class="col">
+												<p class="ttu">КАЛЕНДАРЬ</p>
+												<p>Встроенный календарь помогает главному бухгалтеру вовремя подготовить необходимые отчеты</p>
+											</div>
+										</div>
+									</div>
+									<div class="why-list__item col-md-12 col-6">
+										<div class="row">
+											<div class="col-md-auto">
+												<div class="why-list__icon-wrap"><img src="img/svg/why-3.svg" alt=""/>
+												</div>
+											</div>
+											<div class="col">
+												<p class="ttu">подсказки</p>
+												<p>Встроенная система подсказок работает как самоучитель и&nbsp;позволяет сразу приступить к&nbsp;работе</p>
+											</div>
+										</div>
+									</div>
+									<div class="why-list__item col-md-12 col-6">
+										<div class="row">
+											<div class="col-md-auto">
+												<div class="why-list__icon-wrap"><img src="img/svg/why-4.svg" alt=""/>
+												</div>
+											</div>
+											<div class="col">
+												<p class="ttu">автозаполнение</p>
+												<p>После выполнения стартовых настроек значительная часть данных в&nbsp;документах заполняется автоматически</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="section-inner__picture-wrap">
+									<!-- picture-->
+									<picture class="d-block d-md-none d-lg-block pic-abs"> 
+										<source type="image/webp" srcset="img/@2x/webp/why-img.webp"/><img src="#" data-src="img/@2x/why-img.png" alt=""/>
+									</picture>
+									<!-- /picture-->
+								</div>
+							</div>
 						</div>
-						<div class="row"></div>
 					</div>
-				</section>
-				<!-- end sForm-->
-				<!-- start sContact-->
-				<section class="sContact section" id="sContact">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sContact</h2>
+				</div>
+			</section>
+			<!-- end sWhy-->
+			<!-- start sStart-->
+			<section class="sStart section" id="sStart">
+				<div class="section-inner">
+					<div class="container"> 
+						<div class="row"> 
+							<div class="sp-block section-inner__col section-inner__col--right col-lg-6">
+								<div class="sub-title">быстрый старт</div>
+								<h2>1с&nbsp;Фреш &mdash; <br> бухгалтерия <br> в&nbsp;облаке</h2>
+								<!-- picture-->
+								<picture class="d-block d-md-none d-lg-block pic-abs"> 
+									<source type="image/webp" srcset="img/@2x/webp/start-img.webp" media="(min-width:768px)"/>
+									<source type="image/webp" srcset="img/@1x/webp/start-img.webp"/>
+									<source type="image/png" srcset="img/@2x/start-img.png" media="(min-width:768px)"/>
+									<source type="image/png" srcset="img/@1x/start-img.png"/><img src="#" data-src="img/@2x/start-img.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+								<p>Начните писать отчеты удаленно в интернете, уже через минуту.</p>
+								<ul>
+									<li>Регистрация за 1 минуту</li>
+									<li>Быстрый доступ с компьютера, ноутбука, планшета или телефона</li>
+									<li>Без дополнительных расходов </li>
+								</ul>
+								<div class="row align-items-center justify-content-lg-start justify-content-center">
+									<div class="col-auto"><a class="btn btn-y" href="#">30 дней бесплатно</a></div>
+								</div>
+							</div>
 						</div>
-						<div class="row"></div>
 					</div>
-				</section>
-				<!-- end sContact-->
-				<footer class="footer block-with-lazy">
+				</div>
+			</section>
+			<!-- end sStart-->
+			<!-- start sTeam-->
+			<section class="sTeam section section section--dark" id="sTeam">
+				<div class="section-inner sp-block">
+					<div class="container"> 
+						<h2 class="text-center">В&nbsp;нашей команде работают <span>програмисты-бухгалтеры</span></h2>
+						<div class="row">
+										<div class="sTeam__col col-6">
+											<div class="sTeam__item row">
+												<div class="col-lg-auto">
+													<div class="sTeam__img-wrap">
+														<!-- picture-->
+														<picture> 
+															<source type="image/webp" srcset="img/@2x/webp/team-1.webp"/><img src="#" data-src="img/@2x/team-1.png" alt=""/>
+														</picture>
+														<!-- /picture-->
+													</div>
+												</div>
+												<div class="col">
+													<div class="sTeam__name">всеволод лысиков
+													</div>
+													<ul>
+														<li>Бесплатно доставим</li>
+														<li>Бесплатно установим</li>
+														<li>Гарантия и бонусы</li>
+													</ul>
+													<div class="sTeam__foot">
+														<div class="sTeam__number">207
+														</div>
+														<p>внедрений бухгалтерии на&nbsp;счету Всеволода</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="sTeam__col col-6">
+											<div class="sTeam__item row">
+												<div class="col-lg-auto">
+													<div class="sTeam__img-wrap">
+														<!-- picture-->
+														<picture> 
+															<source type="image/webp" srcset="img/@2x/webp/team-2.webp"/><img src="#" data-src="img/@2x/team-2.png" alt=""/>
+														</picture>
+														<!-- /picture-->
+													</div>
+												</div>
+												<div class="col">
+													<div class="sTeam__name">валентин шуба
+													</div>
+													<ul>
+														<li>Бесплатно доставим</li>
+														<li>Бесплатно установим</li>
+														<li>Гарантия и бонусы</li>
+													</ul>
+													<div class="sTeam__foot">
+														<div class="sTeam__number">57
+														</div>
+														<p>внедрений бухгалтерии на&nbsp;счету Валентина</p>
+													</div>
+												</div>
+											</div>
+										</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sTeam-->
+			<!-- start sDemo-->
+			<section class="sDemo section" id="sDemo">
+				<div class="section-inner">
+					<div class="container"> 
+						<div class="row"> 
+							<div class="sp-block section-inner__col col-lg-6">
+								<div class="sub-title">посмотрите изнутри</div>
+								<h2>бесплатная <br> демонстрация</h2>
+								<div class="video-block d-block d-md-none d-lg-block">
+									<!-- picture-->
+									<picture class="video-bg"> 
+										<source type="image/webp" srcset="img/@2x/webp/video.webp" media="(min-width:576px)"/>
+										<source type="image/webp" srcset="img/@1x/webp/video.webp"/>
+										<source type="image/png" srcset="img/@2x/video.png" media="(min-width:576px)"/>
+										<source type="image/png" srcset="img/@1x/video.png"/><img src="#" data-src="img/@2x/video.png" alt=""/>
+									</picture>
+									<!-- /picture-->
+									<!-- picture-->
+									<picture class="mac-block"> 
+										<source type="image/webp" srcset="img/@2x/webp/mac.webp" media="(min-width:576px)"/>
+										<source type="image/webp" srcset="img/@1x/webp/mac.webp"/>
+										<source type="image/png" srcset="img/@2x/mac.png" media="(min-width:576px)"/>
+										<source type="image/png" srcset="img/@1x/mac.png"/><img src="#" data-src="img/@2x/mac.png" alt=""/>
+									</picture>
+									<!-- /picture-->
+								</div>
+								<p>Наши специалисты проведут для вас бесплатную демонстрацию любой версии в&nbsp;онлайн режиме или приедет к&nbsp;вам в&nbsp;офис в&nbsp;удобное для вас время.</p>
+								<div class="row align-items-center justify-content-lg-start justify-content-center">
+									<div class="col-auto"><a class="btn btn-y" href="#">бесплатная демонстрация</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sDemo-->
+			<!-- start sRew-->
+			<section class="sRew section section section--dark" id="sRew">
+				<div class="container sp-block">
+					<h2><span>Что думают наши&nbsp;клиенты</span> о&nbsp;1С&nbsp;Бухгалтерия&nbsp;8</h2>
+					<div class="sRew__slider-wrap">
+						<div class="sRew__slider sRew__slider--js swiper-container">
+							<div class="swiper-wrapper">
+								<div class="sRew__slide swiper-slide">
+									<div class="sRew__img-wrap"><img class="swiper-lazy res-i" src="#" data-src="img/@2x/rew-1.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="sRew__slide swiper-slide">
+									<div class="sRew__img-wrap"><img class="swiper-lazy res-i" src="#" data-src="img/@2x/rew-2.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="sRew__slide swiper-slide">
+									<div class="sRew__img-wrap"><img class="swiper-lazy res-i" src="#" data-src="img/@2x/rew-3.jpg" alt=""/>
+									</div>
+								</div>
+								<div class="sRew__slide swiper-slide">
+									<div class="sRew__img-wrap"><img class="swiper-lazy res-i" src="#" data-src="img/@2x/rew-4.jpg" alt=""/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+							<svg class="icon icon-arrow-left ">
+								<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
+							</svg>
+						</div>
+						<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+							<svg class="icon icon-arrow-right ">
+								<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<!-- end sRew-->
+			<!-- start sGift-->
+			<section class="sGift sGift--1 section" id="sGift2">
+				<div class="section-inner sp-block">
 					<div class="container">
-						<h2>footer</h2>
+						<!-- picture-->
+						<picture class="box box--left d-none d-lg-block"> 
+							<source type="image/webp" srcset="img/@2x/webp/box-1.webp" media="(min-width:576px)"/>
+							<source type="image/webp" srcset="img/@1x/webp/box-1.webp"/>
+							<source type="image/png" srcset="img/@2x/box-1.png" media="(min-width:576px)"/>
+							<source type="image/png" srcset="img/@1x/box-1.png"/><img src="#" data-src="img/@2x/box-1.png" alt=""/>
+						</picture>
+						<!-- /picture-->
+						<!-- picture-->
+						<picture class="box box--right d-none d-lg-block"> 
+							<source type="image/webp" srcset="img/@2x/webp/box-2.webp" media="(min-width:576px)"/>
+							<source type="image/webp" srcset="img/@1x/webp/box-2.webp"/>
+							<source type="image/png" srcset="img/@2x/box-2.png" media="(min-width:576px)"/>
+							<source type="image/png" srcset="img/@1x/box-2.png"/><img src="#" data-src="img/@2x/box-2.png" alt=""/>
+						</picture>
+						<!-- /picture-->
+						<div class="sub-title">при покупке проф и корп версий</div>
+						<h2>дарим бесплатные 3&nbsp;часа работы специалиста</h2>
+						<p>На что их можно потратить?</p>
+						<ul>
+							<li>Обучение сотрудников программе 1С&nbsp;Бухгалтерия&nbsp;8</li>
+							<li>Выбрать любую услугу DATEX в&nbsp;рамках бесплатных часов</li>
+						</ul><a class="btn btn-y" href="#">оставить заявку</a>
 					</div>
-				</footer>
-			</div>
+				</div>
+			</section>
+			<!-- end sGift-->
+			<!-- start sLogo-->
+			<section class="sLogo section section section--dark" id="sLogo">
+				<div class="section-inner sp-block">
+					<div class="container"> 
+						<h2>к нам обратились</h2>
+						<div class="row">
+							<div class="col-xl-3 col-lg-4 col-6">
+								<!-- picture-->
+								<picture> 
+									<source type="image/webp" srcset="img/@2x/webp/logo-1.webp"/><img src="#" data-src="img/@2x/logo-1.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+								<!-- picture-->
+								<picture> 
+									<source type="image/webp" srcset="img/@2x/webp/logo-2.webp"/><img src="#" data-src="img/@2x/logo-2.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+								<!-- picture-->
+								<picture> 
+									<source type="image/webp" srcset="img/@2x/webp/logo-3.webp"/><img src="#" data-src="img/@2x/logo-3.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+								<!-- picture-->
+								<picture> 
+									<source type="image/webp" srcset="img/@2x/webp/logo-4.webp"/><img src="#" data-src="img/@2x/logo-4.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+								<!-- picture-->
+								<picture> 
+									<source type="image/webp" srcset="img/@2x/webp/logo-5.webp"/><img src="#" data-src="img/@2x/logo-5.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+								<!-- picture-->
+								<picture> 
+									<source type="image/webp" srcset="img/@2x/webp/logo-6.webp"/><img src="#" data-src="img/@2x/logo-6.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+								<!-- picture-->
+								<picture> 
+									<source type="image/webp" srcset="img/@2x/webp/logo-7.webp"/><img src="#" data-src="img/@2x/logo-7.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+							</div>
+							<div class="col-xl-3 col-lg-4 col-6">
+								<!-- picture-->
+								<picture> 
+									<source type="image/webp" srcset="img/@2x/webp/logo-8.webp"/><img src="#" data-src="img/@2x/logo-8.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div><a class="btn btn-y" href="#">стать клиентом</a>
+					</div>
+				</div>
+			</section>
+			<!-- end sLogo-->
+			<!-- start sGift-->
+			<section class="sGift sGift--2 section" id="sGift">
+				<div class="section-inner sp-block">
+					<div class="container">
+						<div class="sub-title">информационно-технологическое сопровождение</div>
+						<h2>дарим 4&nbsp;месяца бесплатного обслуживания</h2>
+						<p>При покупке годового обслуживания 1С: ИТС в&nbsp;компании DATEX </p>
+						<div class="row align-items-center justify-content-center">
+							<div class="col-auto">
+								<div class="price text-primary ttu">12 месяцев
+								</div>
+							</div>
+							<div class="col-auto">
+								<div class="price price--last ttu">26 400 ₽
+								</div>
+							</div>
+							<div class="col-auto">
+								<div class="price price--new ttu">21 840 ₽
+								</div>
+							</div>
+						</div><a class="btn btn-y" href="#">оставить заявку</a>
+					</div>
+				</div>
+			</section>
+			<!-- end sGift-->
+			<!-- start sFaq-->
+			<section class="sFaq section" id="sFaq">
+				<div class="section-inner sp-block">
+					<div class="container">
+						<div class="sub-title">FAQ</div>
+						<h2>Остались вопросы, <br> на&nbsp;которые нужны ответы?</h2>
+						<div class="row">
+										<div class="sFaq__col col-xl-6"><a class="sFaq__item" href="#">На что их можно потратить подарочные часы?
+											<svg class="icon icon-arrow-right ">
+												<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+											</svg></a>
+										</div>
+										<div class="sFaq__col col-xl-6"><a class="sFaq__item" href="#">Кому нужна 1С Бухгалтерия 8?
+											<svg class="icon icon-arrow-right ">
+												<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+											</svg></a>
+										</div>
+										<div class="sFaq__col col-xl-6"><a class="sFaq__item" href="#">Что такое ИТС и зачем оно нужно?
+											<svg class="icon icon-arrow-right ">
+												<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+											</svg></a>
+										</div>
+										<div class="sFaq__col col-xl-6"><a class="sFaq__item" href="#">Какие преимущества программы 1С Бухгалтерия 8?
+											<svg class="icon icon-arrow-right ">
+												<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+											</svg></a>
+										</div>
+										<div class="sFaq__col col-xl-6"><a class="sFaq__item" href="#">Как записаться на демонстрацию продукта?
+											<svg class="icon icon-arrow-right ">
+												<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+											</svg></a>
+										</div>
+										<div class="sFaq__col col-xl-6"><a class="sFaq__item" href="#">Как записаться на демонстрацию продукта?
+											<svg class="icon icon-arrow-right ">
+												<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+											</svg></a>
+										</div>
+						</div><a class="btn btn-y" href="#">ЗАДАТЬ СВОЙ ВОПРОС</a>
+					</div>
+				</div>
+			</section>
+			<!-- end sFaq-->
+			<!-- start sApplication-->
+			<section class="sApplication section section section--dark" id="sApplication">
+				<div class="section-inner">
+					<div class="container"> 
+						<div class="row"> 
+							<div class="sp-block section-inner__col col-xlg-6">
+								<div class="sub-title">свяжитесь с нами</div>
+								<h2>оставьте заявку <br> на&nbsp;консультацию</h2>
+								<!-- picture-->
+								<picture class="d-block d-md-none d-xlg-block pic-abs"> 
+									<source type="image/webp" srcset="img/@2x/webp/phone.webp" media="(min-width:768px)"/>
+									<source type="image/webp" srcset="img/@1x/webp/phone.webp"/>
+									<source type="image/png" srcset="img/@2x/phone.png" media="(min-width:768px)"/>
+									<source type="image/png" srcset="img/@1x/phone.png"/><img src="#" data-src="img/@2x/phone.png" alt=""/>
+								</picture>
+								<!-- /picture-->
+								<p>Наш специалист свяжется с&nbsp;вами и&nbsp;предложит лучшее решение для&nbsp;Вас&nbsp;и&nbsp;вашего предприятия</p>
+								<div class="row align-items-center justify-content-xlg-start justify-content-center">
+									<div class="col-auto"><a class="btn btn-y" href="#">оставить заявку</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<footer class="footer block-with-lazy">
+						<div class="container">
+							<div class="row">
+								<div class="footer__col col-xlg-auto">
+									<div class="soc"><a class="soc__item soc__item soc__item--vk" href="#" target="_blank">
+										<svg class="icon icon-vk ">
+											<use xlink:href="img/svg/sprite.svg#vk"></use>
+										</svg></a><a class="soc__item soc__item soc__item--instagram" href="#" target="_blank">
+										<svg class="icon icon-instagram ">
+											<use xlink:href="img/svg/sprite.svg#instagram"></use>
+										</svg></a><a class="soc__item soc__item soc__item--telegram" href="#" target="_blank">
+										<svg class="icon icon-telegram ">
+											<use xlink:href="img/svg/sprite.svg#telegram"></use>
+										</svg></a><a class="soc__item soc__item soc__item--twitter" href="#" target="_blank">
+										<svg class="icon icon-twitter ">
+											<use xlink:href="img/svg/sprite.svg#twitter"></use>
+										</svg></a>
+									</div>
+								</div>
+								<div class="footer__col col-xlg-auto">
+									<div class="footer__text"><a class="footer__text strong" href="tel:8(800)500-57-48">8 (800) 500-57-48</a>
+									</div><a class="footer__text-gray" href="mailto:info@datexsoft.ru">info@datexsoft.ru</a>
+								</div>
+								<div class="footer__col col-xlg-auto">
+									<div class="footer__text">г. Самара, Партизанская ул, дом № 86, офис 723
+									</div>
+									<div class="footer__text-gray">Пн-Пт с 9:00 до 18:00
+									</div>
+								</div>
+								<div class="footer__col col-xlg-auto">
+									<div class="footer__text">© Datexsoft 2020. Все права защищены.
+									</div><a class="footer__text-gray" href="#">Политика конфиденциальности</a>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</section>
+			<!-- end sApplication-->
 		</div>
 		<!--  start modals-->
 		<div class="modal-win" id="modal-call" style="display: none">
@@ -141,7 +703,7 @@
 					<button class="form-wrap__btn btn" type="submit"> 
 					</button>
 					<div class="form-wrap__polite">
-						<label class="custom-input"><input class="custom-input__input" name="checkbox" type="checkbox"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+						<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
 						</label>
 					</div>
 				</form>
@@ -149,10 +711,10 @@
 		</div>
 		<!-- #modal-call-->
 		<!-- end modals-->
-		<link href="libs/swiper/css/swiper.min.css" rel="stylesheet"/>
-		<link href="libs/@fancyapps/fancybox/jquery.fancybox.min.css" rel="stylesheet"/>
+		<script src="libs/loading-attribute-polyfill/loading-attribute-polyfill.min.js"></script>
 		<!-- modal libs-->
 		<script src="libs/jquery/jquery.slim.min.js"></script>
+		<script src="libs/fullpage.js/fullpage.min.js"></script>
 		<script src="libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
 		<!-- modal libs-->
 		<!-- slider libs-->
