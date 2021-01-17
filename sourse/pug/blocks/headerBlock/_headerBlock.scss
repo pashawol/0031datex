@@ -41,6 +41,11 @@ pointer-events: none;
 	
 	&--2{
 		--t: calc(1 * 150px / 1);
+		@include media-breakpoint-down(sm){
+			--t: calc(1 * 30px / 1);
+
+			--l: calc(1 * 20px / 1);
+		}
 		--l: calc(1 * 120px / 1);
 	}
 	&--3{
@@ -59,6 +64,10 @@ pointer-events: none;
 	&--6{
 		--t: calc(157px);
 		--l: auto;
+		@include media-breakpoint-down(sm) {
+			
+			right: rem(-280);
+		}
 		right: rem(80);
 		width: 437px;
 		height: 437px;
@@ -90,6 +99,10 @@ pointer-events: none;
 		--l: auto;
 		bottom: 50px;
 		right: 50px;
+		@include media-breakpoint-down(sm){
+			right: -150px;
+
+		}
 		// width: 437px;
 		// height: 437px;
 	}
