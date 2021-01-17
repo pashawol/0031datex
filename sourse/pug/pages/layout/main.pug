@@ -8,7 +8,7 @@ include ../../blocks/modal/_modal.pug
 include js-css.pug
 
 include ../../blocks/header/_header.pug
-include ../../blocks/topLine/_topLine.pug
+//- include ../../blocks/topLine/_topLine.pug
 include ../../blocks/top-nav/_top-nav.pug 
 include ../../blocks/headerBlock/_headerBlock.pug
 include ../../blocks/sForm/_sForm.pug
@@ -36,9 +36,12 @@ html(lang="ru")
 	//- 	.loaded_hiding {  opacity: 0; pointer-events: none;  } .loaded_hiding::before { display: none; }
 	//- body.loaded_hiding(class= mainPage) 
 	body(class= mainPage) 
-		.main-wrapper#fullpage
-			block pagecontent
-				h3 content
+	
+		+top-nav()
+		.main-wrapper
+			#fullpage
+				block pagecontent
+					h3 content
 		+modal()
 		+allcjs()
 		

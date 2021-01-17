@@ -1,6 +1,119 @@
 
 	// start .sFaq
 	.sFaq { 
+		.el-img{
+			 
+			&--1{ 
+				// transform: translate(calc(-1 * 272px / 2), calc(-1 * 272px / 2)); 
+				// top: 50%;
+				display: none;
+			}
+			
+			&--2{
+				--t: calc(100px);
+				--l: calc(100px);
+				.img-svg{
+					// transform: rotate(180deg);
+				}
+			}
+			// &--3{
+			// 	--t: calc(130px);
+			// 	--l: 40%;
+			// 	.img-svg{
+			// 		position: relative;
+			// 		transform: translateX(-50%); 
+			// 	}
+			// }
+			// &--4{
+			// 	--t: calc(20px);
+			// 	--l: auto;
+			// 	right: 0;
+			// }
+			// &--5{
+			// 	--t: calc(157px);
+			// 	--l: calc(157px);
+			// }
+			
+			// &--6{
+			// 	--t: calc(357px);
+			// 	--l: calc(157px);
+			// 	right: rem(80);
+			// 	width: 437px;
+			// 	height: 437px;
+			// }
+			
+			// &--7{
+			// 	--t: 20px;
+			// 	--l: auto;
+			// 	right: 0;
+			// 	// width: 437px;
+			// 	// height: 437px;
+			// }
+			
+			// &--8{
+			// 	--t: calc(600px);
+			// 	--l: calc(50% );
+			// 	// width: 437px;
+			// 	// height: 437px;
+			// }
+			// &--9{
+			// 	bottom: -64px;
+			// 	--t: auto;
+			// 	--l: calc(50% -64px);
+			// 	// width: 437px;
+			// 	// height: 437px;
+			// }
+			
+			// &--10{
+			// 	--t: auto;
+			// 	--l: auto;
+			// 	bottom: 50px;
+			// 	right: 50px;
+			// 	// width: 437px;
+			// 	// height: 437px;
+			// }
+			
+			// &--11{
+			// 	--t: auto;
+			// 	--l: calc( 103px);
+			// 	bottom: rem(0); 
+			// 	// width: 437px;
+			// 	// height: 437px;
+			// }
+			
+			// &--12{
+			// 	--t: auto;
+			// 	--l: calc( 103px);
+			// 	bottom: rem(150); 
+			// 	transform: rotate(140deg);
+			// 	// width: 437px;
+			// 	// height: 437px;
+			// }
+			// &--13{
+			// 	--t: auto;
+			// 	--l: calc(60%);
+			// 	bottom: rem(40); 
+			// 	// width: 437px;
+			// 	// height: 437px;
+			// } 
+			// &--14{
+			// 	--t: auto;
+			// 	--l: calc(100px );
+			// 	// width: 437px;
+			// 	bottom: rem(40); 
+			// 	// width: 437px;
+			// 	// height: 437px;
+			// } 
+
+			&--15{
+				--t: auto;
+				--l: auto;
+				bottom: -40px;
+				right: 80px;
+				// width: 437px;
+				// height: 437px;
+			} 
+		}
 		h2{
 			max-width: none !important;
 			@include media-breakpoint-only(xl){

@@ -14,6 +14,7 @@ $h: em(2);
 	padding: rem(20 / 2);
 	@extend .btn;
 	@extend .btn-y;
+	color: #000000 !important;
 	&.on {
 		color: #ffffff;
 	}
@@ -95,7 +96,7 @@ $h: em(2);
 		opacity: 0;
 
 	}
-	@include mt(.6);
+	@include mt(.4);
 	will-change: transform;
 
 	&__inner {

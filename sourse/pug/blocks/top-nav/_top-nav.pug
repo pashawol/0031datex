@@ -18,11 +18,11 @@ mixin mob-mnu()
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
-	+b.top-nav.block-with-lazy
+	+b.top-nav.block-with-lazy(class="wow  animate__fadeIn")
 		.container
 			.row
 				.col-xl-auto.col
-					a(href="/")
+					a(href="#header")
 						+logo()
 				.col.d-none.d-xl-block
 					+mnu()
@@ -31,9 +31,9 @@ mixin top-nav()
 						+icon('call')
 						| 8 (800) 500-57-48
 				.col-auto.d-none.d-md-block
-					+e.btn(href="#") Заказать звонок
+					+e.btn.link-modal(href="#modal-call" data-title="заказать звонок" data-text="Заполните форму, и мы свяжемся с Вами сразу же, как только получим заявку.") Заказать звонок
 				.col-auto.d-xl-none
-					+b.toggle-menu-mobile--js
+					+b.toggle-menu-mobile.link-modal(href="#modal-menu")
 						span
 				
 	// end top-nav

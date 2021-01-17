@@ -1,19 +1,49 @@
 mixin sStart(data)
 	// start sStart
-	+b.SECTION.sStart.section#sStart&attributes(attributes)
+	+b.SECTION.sStart.section.bg-wrap&attributes(attributes)
+	
+		+pic("cloud-bg.jpg",'bg').picture-bg(class="wow  animate__fadeIn " data-wow-delay=del)
+		.el-img.el-img--2(class="wow  animate__fadeInRight " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-2.svg", alt="")
+		//- .el-img.el-img--3(class="wow  animate__fadeInLeft " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-3.svg", alt="")
+		//- .el-img.el-img--4(class="wow  animate__fadeInDown" data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-4.svg", alt="")
+		.el-img.el-img--5(class="wow  animate__fadeInDown " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		//- .el-img.el-img--6(class="wow  animate__fadeInRight " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-6.svg", alt="")
+		.el-img.el-img--7(class="wow  animate__fadeIn " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-7.svg", alt="")
+		//- .el-img.el-img--8(class="wow  animate__fadeIn " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-8.svg", alt="")
+		//- .el-img.el-img--9(class="wow  animate__fadeIn " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-9.svg", alt="")
+		//- .el-img.el-img--10(class="wow  animate__fadeInRight" data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-10.svg", alt="")
+		//- .el-img.el-img--11(class="wow  animate__fadeInUp " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-7.svg", alt="")
+		//- .el-img.el-img--12(class="wow  animate__fadeInUp " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		//- .el-img.el-img--13(class="wow  animate__fadeInUp " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		//- .el-img.el-img--14(class="wow  animate__fadeInUp " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-11.svg", alt="")
+		.el-img.el-img--15(class="wow  animate__fadeInDown " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-12.svg", alt="")
 		+b.section-inner
 			.container 
 				.row 
 					.sp-block.section-inner__col.section-inner__col--right.col-lg-6
 						.sub-title быстрый старт
-						h2 1с&nbsp;Фреш &mdash; <br> бухгалтерия <br> в&nbsp;облаке
-						+pic('start-img.png','','768px').d-block.d-md-none.d-lg-block.pic-abs
-						p Начните писать отчеты удаленно в интернете, уже через минуту.
-						ul
+						h2(class="wow  animate__fadeIn" data-wow-delay=".1s") 1с&nbsp;Фреш &mdash; <br> бухгалтерия <br> в&nbsp;облаке
+						+pic('start-img.png','','768px').d-block.d-md-none.d-lg-block.pic-abs(class="wow  animate__fadeIn" data-wow-delay="0")
+						p(class="wow  animate__fadeIn" data-wow-delay=".2s") Начните писать отчеты удаленно в интернете, уже через минуту.
+						ul(class="wow  animate__fadeIn" data-wow-delay=".3s")
 							li Регистрация за 1 минуту
 							li Быстрый доступ с компьютера, ноутбука, планшета или телефона
 							li Без дополнительных расходов 
-						.row.align-items-center.justify-content-lg-start.justify-content-center
+						.row.align-items-center.justify-content-lg-start.justify-content-center(class="wow  animate__fadeIn" data-wow-delay=".4s")
 							.col-auto
-								a.btn.btn-y(href="#") 30 дней бесплатно
+								a.btn.btn-y.link-modal(href="#modal-call" data-title="1с фреш <span>версия в облаке</span>" data-text="Заполните форму, и мы свяжемся с Вами сразу же, как только получим заявку.") 30 дней бесплатно
 	// end sStart

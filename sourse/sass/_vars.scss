@@ -521,7 +521,7 @@ $form-label-font-style: null !default;
 $form-label-font-weight: null !default;
 $form-label-color: null !default;
 
-$input-padding-y: $input-btn-padding-y !default;
+$input-padding-y: rem(17) !default;
 $input-padding-x: $input-btn-padding-x !default;
 $input-font-family: $input-btn-font-family !default;
 $input-font-size: $input-btn-font-size !default;
@@ -541,11 +541,11 @@ $input-disabled-bg: $gray-200 !default;
 $input-disabled-border-color: null !default;
 
 $input-color: $body-color !default;
-$input-border-color: $gray-400 !default;
-$input-border-width: $input-btn-border-width !default;
+$input-border-color: #CACACA !default;
+$input-border-width: 1px !default;
 $input-box-shadow: $box-shadow-inset !default;
 
-$input-border-radius: $border-radius !default;
+$input-border-radius: 0 !default;
 $input-border-radius-sm: $border-radius-sm !default;
 $input-border-radius-lg: $border-radius-lg !default;
 
@@ -572,7 +572,7 @@ $input-transition: border-color .15s ease-in-out,
 box-shadow .15s ease-in-out !default;
 
 
-$form-check-input-width: 1em !default;
+$form-check-input-width: 1.4em !default;
 $form-check-min-height: $font-size-base * $line-height-base !default;
 $form-check-padding-left: $form-check-input-width+.5em !default;
 $form-check-margin-bottom: .125rem !default;
@@ -586,16 +586,16 @@ box-shadow .15s ease-in-out !default;
 $form-check-input-active-filter: brightness(90%) !default;
 
 $form-check-input-bg: $body-bg !default;
-$form-check-input-border: 1px solid rgba(0, 0, 0, .25) !default;
-$form-check-input-border-radius: .25em !default;
+$form-check-input-border: 1px solid #CACACA !default;
+$form-check-input-border-radius: 0 !default;
 $form-check-radio-border-radius: 50% !default;
-$form-check-input-focus-border: $input-focus-border-color !default;
+$form-check-input-focus-border: #CACACA !default;
 $form-check-input-focus-box-shadow: $input-btn-focus-box-shadow !default;
 
 $form-check-input-checked-color: $component-active-color !default;
-$form-check-input-checked-bg-color: $component-active-bg !default;
+$form-check-input-checked-bg-color:  #CACACA !default;
 $form-check-input-checked-border-color: $form-check-input-checked-bg-color !default;
-$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") !default;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.0344 1.42285L3.81121 8.64604L0.965606 5.80043L0 6.76604L3.81121 10.5772L12 2.38846L11.0344 1.42285Z' fill='%23FF294A'/%3E%3C/svg%3E%0A") !default;
 $form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
 
 $form-check-input-indeterminate-color: $component-active-color !default;

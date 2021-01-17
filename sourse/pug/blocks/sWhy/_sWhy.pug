@@ -1,26 +1,55 @@
 mixin sWhy(data)
 	// start sWhy
-	+b.SECTION.sWhy.section#sWhy&attributes(attributes)
+	+b.SECTION.sWhy.section.bg-wrap&attributes(attributes)
+		.el-img.el-img--1(class="wow  animate__fadeIn" data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-1.svg", alt="")
+		.el-img.el-img--2(class="wow  animate__fadeInLeft " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-2.svg", alt="")
+		//- .el-img.el-img--3(class="wow  animate__fadeInDown " data-wow-delay=".6s")
+		//- 	img.img-svg(loading="lazy" src="img/head-el-3.svg", alt="")
+		//- .el-img.el-img--4(class="wow  animate__fadeInDown" data-wow-delay=".6s")
+		//- 	img.img-svg(loading="lazy" src="img/head-el-4.svg", alt="")
+		.el-img.el-img--5(class="wow  animate__fadeInRight " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		.el-img.el-img--6(class="wow  animate__fadeInRight " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-6.svg", alt="")
+		.el-img.el-img--7(class="wow  animate__fadeIn " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-7.svg", alt="")
+		//- .el-img.el-img--8(class="wow  animate__fadeIn " data-wow-delay=".6s")
+		//- 	img.img-svg(loading="lazy" src="img/head-el-8.svg", alt="")
+		//- .el-img.el-img--9(class="wow  animate__fadeIn " data-wow-delay=".6s")
+		//- 	img.img-svg(loading="lazy" src="img/head-el-9.svg", alt="")
+		.el-img.el-img--10(class="wow  animate__fadeInRight" data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-10.svg", alt="")
+		.el-img.el-img--11(class="wow  animate__fadeInUp " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-7.svg", alt="")
+		.el-img.el-img--12(class="wow  animate__fadeInUp " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		.el-img.el-img--13(class="wow  animate__fadeInUp " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		.circle.circle--left(class="wow  animate__fadeInUp " data-wow-delay=".8s")
+		.circle.circle--right(class="wow  animate__fadeInUp " data-wow-delay=".8s")
 		+b.section-inner
 			.container 
 				.row 
 					.sp-block.section-inner__col.col-lg-6 
-						h2 почему выбирают 
+						
+						h2(class="wow  animate__fadeIn"  ) почему выбирают 
 							span 1с&nbsp;бухгалтерию&nbsp;8
 						+b.why-list.row
 							mixin item(i, t, p)
-								+e.item.col-md-12.col-6
+								+e.item.col-md-12.col-6&attributes(attributes)
 									.row
 										.col-md-auto
 											+e.icon-wrap
 												img(src=`img/svg/why-${i}.svg`, alt="") 
-										.col
+										.col(class="wow  animate__fadeInLeft" data-wow-delay="1.6s") 
 											p.ttu= t
 											p!= p
-							+item(`1`,`законы`,`Учет в&nbsp;программе ведется согласно требованиям действующего законодательства&nbsp;РФ`)
-							+item(`2`,`КАЛЕНДАРЬ`,`Встроенный календарь помогает главному бухгалтеру вовремя подготовить необходимые отчеты`)
-							+item(`3`,`подсказки`,`Встроенная система подсказок работает как самоучитель и&nbsp;позволяет сразу приступить к&nbsp;работе`)
-							+item(`4`,`автозаполнение`,`После выполнения стартовых настроек значительная часть данных в&nbsp;документах заполняется автоматически`) 
-						+e.picture-wrap
+							+item(`1`,`законы`,`Учет в&nbsp;программе ведется согласно требованиям действующего законодательства&nbsp;РФ`)(class="wow  animate__fadeInRight " data-wow-delay=".6s")
+							+item(`2`,`КАЛЕНДАРЬ`,`Встроенный календарь помогает главному бухгалтеру вовремя подготовить необходимые отчеты`)(class="wow  animate__fadeInRight " data-wow-delay=".8s")
+							+item(`3`,`подсказки`,`Встроенная система подсказок работает как самоучитель и&nbsp;позволяет сразу приступить к&nbsp;работе`)(class="wow  animate__fadeInRight " data-wow-delay="1s")
+							+item(`4`,`автозаполнение`,`После выполнения стартовых настроек значительная часть данных в&nbsp;документах заполняется автоматически`)(class="wow  animate__fadeInRight " data-wow-delay="1.2s") 
+						+e.picture-wrap(class="wow  animate__fadeIn" data-wow-delay=".3s")
 							+pic('why-img.png','',0).d-block.d-md-none.d-lg-block.pic-abs
 	// end sWhy

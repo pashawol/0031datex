@@ -1,12 +1,16 @@
 .form-wrap{
  	&__input-wrap{
 			// @extend .form-group;
-			
+			padding-bottom: rem(25);
 		}
 		&__input{
 			// @extend .form-control;
 		//  outline: 0 !important;
 		 resize: none;
+		 border-left: none;
+		 border-top: none;
+		 border-right: none;
+		 text-align: center;
  	}
  	&__btn{
  		cursor: pointer;
@@ -31,6 +35,13 @@
 }
 .parsley-errors-list{
 	color: red;
+}
+
+.form-check-input{
+		background-size: .8em;
+}
+.form-check-input:checked{
+	background-color: transparent;
 }
 
 // 

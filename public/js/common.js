@@ -6,49 +6,44 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+var $ = jQuery;
 var JSCCommon = {
 	btnToggleMenuMobile: [].slice.call(document.querySelectorAll(".toggle-menu-mobile--js")),
 	menuMobile: document.querySelector(".menu-mobile--js"),
 	menuMobileLink: [].slice.call(document.querySelectorAll(".menu-mobile--js ul li a")),
 	modalCall: function modalCall() {
-		$(".link-modal").fancybox({
-			arrows: false,
-			infobar: false,
-			touch: false,
-			type: 'inline',
-			autoFocus: false,
-			i18n: {
-				en: {
-					CLOSE: "Закрыть",
-					NEXT: "Вперед",
-					PREV: "Назад" // PLAY_START: "Start slideshow",
-					// PLAY_STOP: "Pause slideshow",
-					// FULL_SCREEN: "Full screen",
-					// THUMBS: "Thumbnails",
-					// DOWNLOAD: "Download",
-					// SHARE: "Share",
-					// ZOOM: "Zoom"
+		function modalClose() {
+			document.querySelector('body').classList.remove('fixed');
+			document.querySelector('html').classList.remove('fixed');
+			$(".modal-win").removeClass('active');
+			$.fn.fullpage.setAllowScrolling(true);
+		}
 
-				}
-			},
-			beforeLoad: function beforeLoad() {
-				document.querySelector("html").classList.add("fixed");
-			},
-			afterClose: function afterClose() {
-				document.querySelector("html").classList.remove("fixed");
+		document.addEventListener('mouseup', function (event) {
+			var container = event.target.closest(".modal-win.active"); // (1)
+
+			if (!container) {
+				modalClose();
 			}
+		}, {
+			passive: true
 		});
-		$(".modal-close-js").click(function () {
-			$.fancybox.close();
+		$('[data-fancybox-close], .menu-item a ').click(function () {
+			modalClose();
 		});
 		$.fancybox.defaults.backFocus = false;
 		var linkModal = document.querySelectorAll('.link-modal');
 
 		function addData() {
 			linkModal.forEach(function (element) {
-				element.addEventListener('click', function () {
+				element.addEventListener('click', function (e) {
+					e.preventDefault();
 					var modal = document.querySelector(element.getAttribute("href"));
 					var data = element.dataset;
+					modal.classList.toggle('active');
+					$.fn.fullpage.setAllowScrolling(false);
+					document.querySelector('body').classList.add('fixed');
+					document.querySelector('html').classList.add('fixed');
 
 					function setValue(val, elem) {
 						if (elem && val) {
@@ -57,10 +52,10 @@ var JSCCommon = {
 						}
 					}
 
-					setValue(data.title, '.ttu');
-					setValue(data.text, '.after-headline');
-					setValue(data.btn, '.btn');
-					setValue(data.order, '.order');
+					setValue(data.title, '.modal-title');
+					setValue(data.text, '.modal-title-sub'); // setValue(data.btn, '.btn');
+
+					setValue(data.title, '.order');
 				});
 			});
 		}
@@ -178,7 +173,7 @@ var JSCCommon = {
 		});
 	},
 	animateScroll: function animateScroll() {
-		$(document).on('click', " .top-nav li a, .scroll-link", function () {
+		$(document).on('click', "  .scroll-link", function () {
 			var elementClick = $(this).attr("href");
 			var destination = $(elementClick).offset().top;
 			$('html, body').animate({
@@ -193,7 +188,6 @@ var JSCCommon = {
 		if (currentYear) currentYear.innerText = now.getFullYear();
 	}
 };
-var $ = jQuery;
 
 function eventHandler() {
 	JSCCommon.ifie();
@@ -245,7 +239,6 @@ function eventHandler() {
 		slidesPerView: 1,
 		spaceBetween: 20,
 		slideToClickedSlide: true,
-		freeModeMomentum: true,
 		navigation: {
 			nextEl: '.sRew .swiper-button-next',
 			prevEl: '.sRew .swiper-button-prev'
@@ -271,19 +264,43 @@ function eventHandler() {
 		}
 	})); // modal window
 
+	var swiper5 = new Swiper('.slider-faq--js', _objectSpread(_objectSpread({}, defaultSl), {}, {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		loop: true,
+		navigation: {
+			nextEl: '.control-wrap .swiper-button-next',
+			prevEl: '.control-wrap .swiper-button-prev'
+		}
+	})); // modal window
+
+	$(document).on('click', ".sFaq__item", function () {
+		var i = $(this).parent().index();
+		swiper5.slideTo(i);
+	});
+	var wow = new WOW({
+		// mobile: false,
+		animateClass: 'animate__animated',
+		live: true
+	});
 	$('#fullpage').fullpage({
 		scrollingSpeed: 800,
 		loopHorizontal: true,
-		// responsiveWidth: 1200, 
+		responsiveWidth: 1200,
 		// responsiveHeight: 600,
-		responsiveHeight: 600,
+		// responsiveHeight: 600,
+		// responsiveHeight: 1200,
 		animateAnchor: true,
 		navigation: true,
 		navigationPosition: 'right',
 		recordHistory: false,
-		// verticalCentered: false,
-		fixedElements: '.top-nav',
+		css3: true,
 		scrollBar: true,
+		// verticalCentered: false,
+		// fixedElements: '.top-nav',
+		anchors: ['header', 'sBase', 'sProf', 'sCorp', 'sWhy', 'sStart', 'sTeam', "sDemo", 'sRew', 'sGift', 'sLogo', 'sGift2', 'sFaq', 'sApplication'],
+		menu: '.menu',
+		// scrollBar: true,
 		parallaxOptions: {
 			type: 'reveal',
 			percentage: 62,
@@ -293,9 +310,9 @@ function eventHandler() {
 			var loadedSection = destination.item; // console.log(this);
 
 			if (loadedSection.classList.contains('section--dark')) {
-				document.documentElement.style.setProperty('--blockColor', "#fff");
+				document.querySelector('body').classList.add('body-dark');
 			} else {
-				document.documentElement.style.removeProperty('--blockColor'); // console.log('#1C1C24');
+				document.querySelector('body').classList.remove('body-dark');
 			}
 		},
 		// continuousVertical: true,
@@ -303,9 +320,33 @@ function eventHandler() {
 		// scrollOverflow: true,
 		// scrollOverflowReset: true,
 		// scrollOverflowReset: true,
-		afterRender: function afterRender() {// var rellax = new Rellax('.rellax', {});
+		afterRender: function afterRender() {
+			wow.init(); // var rellax = new Rellax('.rellax', {});
 			// wow.init();
 		}
+	});
+	$('img.img-svg, .menu-image').each(function () {
+		var $img = $(this);
+		var imgClass = $img.attr('class');
+		var imgURL = $img.attr('src');
+		$.get(imgURL, function (data) {
+			// Get the SVG tag, ignore the rest
+			var $svg = $(data).find('svg'); // Add replaced image's classes to the new SVG
+
+			if (typeof imgClass !== 'undefined') {
+				$svg = $svg.attr('class', imgClass + ' replaced-svg');
+			} // Remove any invalid XML tags as per http://validator.w3.org
+
+
+			$svg = $svg.removeAttr('xmlns:a'); // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+
+			if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+				$svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
+			} // Replace image with new SVG
+
+
+			$img.replaceWith($svg);
+		}, 'xml');
 	});
 }
 

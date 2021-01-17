@@ -1,16 +1,47 @@
 mixin sFaq(data)
 	// start sFaq
-	+b.SECTION.sFaq.section#sFaq&attributes(attributes)
+	+b.SECTION.sFaq.section.bg-wrap&attributes(attributes)
+		- let del = '.9s'
+		//- .el-img.el-img--1(class="wow  animate__fadeIn" data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-1.svg", alt="")
+		.el-img.el-img--2(class="wow  animate__fadeInRight " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-2.svg", alt="")
+		//- .el-img.el-img--3(class="wow  animate__fadeInLeft " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-3.svg", alt="")
+		//- .el-img.el-img--4(class="wow  animate__fadeInDown" data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-4.svg", alt="")
+		.el-img.el-img--5(class="wow  animate__fadeInDown " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		//- .el-img.el-img--6(class="wow  animate__fadeInRight " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-6.svg", alt="")
+		//- .el-img.el-img--7(class="wow  animate__fadeIn " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-7.svg", alt="")
+		.el-img.el-img--8(class="wow  animate__fadeIn " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-8.svg", alt="")
+		//- .el-img.el-img--9(class="wow  animate__fadeIn " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-9.svg", alt="")
+		//- .el-img.el-img--10(class="wow  animate__fadeInRight" data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-10.svg", alt="")
+		//- .el-img.el-img--11(class="wow  animate__fadeInUp " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-7.svg", alt="")
+		//- .el-img.el-img--12(class="wow  animate__fadeInUp " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		.el-img.el-img--13(class="wow  animate__fadeInUp " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		.el-img.el-img--14(class="wow  animate__fadeInUp " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-11.svg", alt="")
+		//- .el-img.el-img--15(class="wow  animate__fadeInDown " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-12.svg", alt="")
 		.section-inner.sp-block
 			.container
 				//- +pic("box-1.png").box.box--left.d-none.d-lg-block
 				//- +pic("box-2.png").box.box--right.d-none.d-lg-block
-				.sub-title FAQ
-				h2 Остались вопросы, <br> на&nbsp;которые нужны ответы?
+				.sub-title(class="wow  animate__fadeIn " data-wow-delay='.3s') FAQ
+				h2(class="wow  animate__fadeIn " data-wow-delay='.3s') Остались вопросы, <br> на&nbsp;которые нужны ответы?
 				.row
 					mixin item(t)
-						+e.col.col-xl-6
-							+e.item(href="#")!= t
+						+e.col.col-xl-6(class="wow  animate__fadeInUp " data-wow-delay='.3s')
+							+e.item.link-modal(href="#modal-faq")!= t
 								+icon('arrow-right')
 					+item(`На что их можно потратить подарочные часы?`)
 					+item(`Кому нужна 1С Бухгалтерия 8?`)
@@ -18,6 +49,6 @@ mixin sFaq(data)
 					+item(`Какие преимущества программы 1С Бухгалтерия 8?`)
 					+item(`Как записаться на демонстрацию продукта?`)
 					+item(`Как записаться на демонстрацию продукта?`)
-				a.btn.btn-y(href="#") ЗАДАТЬ СВОЙ ВОПРОС
+				a.btn.btn-y.link-modal(href="#modal-ask" data-title="задать свой вопрос" data-text="Заполните форму, и мы свяжемся с Вами сразу же, как только получим заявку." class="wow  animate__fadeInUp " data-wow-delay='.5s')   ЗАДАТЬ СВОЙ ВОПРОС
 		
 	// end sFaq

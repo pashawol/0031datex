@@ -31,7 +31,14 @@
 		--swiperArrowPosition: 0; 
 
 		--blockColor:#{$body-color};
-
+		
+		--svgColor: #EBEBF3;
+		
+	}
+	
+	.body-dark{
+	--blockColor: #fff;
+		
 }
 
 

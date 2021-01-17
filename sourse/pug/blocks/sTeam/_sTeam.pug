@@ -1,28 +1,56 @@
 mixin sTeam(data)
 	// start sTeam
-	+b.SECTION.sTeam.section#sTeam&attributes(attributes)
+	+b.SECTION.sTeam.section.bg-wrap&attributes(attributes)
+		.el-img.el-img--1(class="wow  animate__fadeIn" data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-1.svg", alt="")
+		.el-img.el-img--2(class="wow  animate__fadeInLeft " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-2.svg", alt="")
+		//- .el-img.el-img--3(class="wow  animate__fadeInDown " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-3.svg", alt="")
+		//- .el-img.el-img--4(class="wow  animate__fadeInDown" data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-4.svg", alt="")
+		.el-img.el-img--5(class="wow  animate__fadeInRight " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		.el-img.el-img--6(class="wow  animate__fadeInRight " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-6.svg", alt="")
+		.el-img.el-img--7(class="wow  animate__fadeIn " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-7.svg", alt="")
+		//- .el-img.el-img--8(class="wow  animate__fadeIn " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-8.svg", alt="")
+		//- .el-img.el-img--9(class="wow  animate__fadeIn " data-wow-delay=del)
+		//- 	img.img-svg(loading="lazy" src="img/head-el-9.svg", alt="")
+		.el-img.el-img--10(class="wow  animate__fadeInRight" data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-10.svg", alt="")
+		.el-img.el-img--11(class="wow  animate__fadeInUp " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-7.svg", alt="")
+		.el-img.el-img--12(class="wow  animate__fadeInUp " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		.el-img.el-img--13(class="wow  animate__fadeInUp " data-wow-delay=del)
+			img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		.circle.circle--left(class="wow  animate__fadeInUp " data-wow-delay=".8s")
+		.circle.circle--right(class="wow  animate__fadeInUp " data-wow-delay=".8s")
 		.section-inner.sp-block
 			.container 
-				h2.text-center В&nbsp;нашей команде работают 
+				h2.text-center(class="wow  animate__fadeIn" data-wow-delay=`${dur + 0}s`) В&nbsp;нашей команде работают 
 					span програмисты-бухгалтеры
 					
 				.row
-					mixin item(i,name, n, p)
+					mixin item(i,name, n, p, dur)
 						+e.col.col-6
 							+e.item.row
 								.col-lg-auto
-									+e.img-wrap
+									+e.img-wrap(class="wow  animate__fadeIn" data-wow-delay=`${dur + 0.1}s`)
 										+pic(`team-${i}.png`,'',0)
 								.col
-									+e.name= name
-									ul
+									+e.name(class="wow  animate__fadeIn" data-wow-delay=`${dur + .5}s`)= name
+									ul(class="wow  animate__fadeIn" data-wow-delay=`${dur + .6}s`)
 										li Бесплатно доставим
 										li Бесплатно установим
 										li Гарантия и бонусы
-									+e.foot
+									+e.foot(class="wow  animate__fadeIn" data-wow-delay=`${dur + .8}s`)
 										+e.number= n
 										p!= p
 					+item(`1`,`всеволод лысиков`,`207`,`внедрений бухгалтерии на&nbsp;счету Всеволода`)
-					+item(`2`,`валентин шуба`,`57`,`внедрений бухгалтерии на&nbsp;счету Валентина`)
+					+item(`2`,`валентин шуба`,`57`,`внедрений бухгалтерии на&nbsp;счету Валентина`,.8)
 
 	// end sTeam

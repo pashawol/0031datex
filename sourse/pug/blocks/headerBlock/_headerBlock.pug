@@ -1,10 +1,38 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section.section--dark.bg-wrap#headerBlock&attributes(attributes)
-		+pic("head-bg.png",'bg').picture-bg
+	+b.headerBlock.section.section--dark.bg-wrap&attributes(attributes)
+		//- +pic("head-bg.png",'bg').picture-bg
+		.el-img.el-img--1(class="wow  animate__fadeIn" data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-1.svg", alt="")
+		.el-img.el-img--2(class="wow  animate__fadeInLeft " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-2.svg", alt="")
+		.el-img.el-img--3(class="wow  animate__fadeInDown " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-3.svg", alt="")
+		.el-img.el-img--4(class="wow  animate__fadeInDown" data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-4.svg", alt="")
+		.el-img.el-img--5(class="wow  animate__fadeInRight " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		.el-img.el-img--6(class="wow  animate__fadeInRight " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-6.svg", alt="")
+		.el-img.el-img--7(class="wow  animate__fadeIn " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-7.svg", alt="")
+		.el-img.el-img--8(class="wow  animate__fadeIn " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-8.svg", alt="")
+		.el-img.el-img--9(class="wow  animate__fadeIn " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-9.svg", alt="")
+		.el-img.el-img--10(class="wow  animate__fadeInRight" data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-10.svg", alt="")
+		.el-img.el-img--11(class="wow  animate__fadeInUp " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-7.svg", alt="")
+		.el-img.el-img--12(class="wow  animate__fadeInUp " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		.el-img.el-img--13(class="wow  animate__fadeInUp " data-wow-delay=".6s")
+			img.img-svg(loading="lazy" src="img/head-el-5.svg", alt="")
+		.circle.circle--left(class="wow  animate__fadeInUp " data-wow-delay=".8s")
+		.circle.circle--right(class="wow  animate__fadeInUp " data-wow-delay=".8s")
 		.section-inner
 			.container 
-				.row
+				.row(class="wow  animate__fadeIn" data-wow-delay=".6s")
 					.sp-block.section-inner__col.col-lg-6
 						.sub-title  доступно и всерьез
 						h1 1С&nbsp;Бухгалтерия&nbsp;8 в&nbsp;Самаре
@@ -13,7 +41,7 @@ mixin headerBlock()
 							li Бесплатно установим
 							li Гарантия и бонусы
 						p Автоматизируйте бухгалтерский и&nbsp;налоговый отчет, рассчитывайте зарплату быстро и&nbsp;без задержек, ведите правильный учет с&nbsp;помощью 1С&nbsp;Бухгалтерия&nbsp;8
-						a.btn.btn-y(href="#") Подобрать программу
+						a.btn.btn-y.link-modal(href="#modal-call" data-title="подобрать программу" data-text="Заполните форму, и мы свяжемся с Вами сразу же, как только получим заявку.") Подобрать программу
 					.col.d-none.d-lg-block
 						+pic('head-img.png','',0)
 		.btn-next
