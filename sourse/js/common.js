@@ -304,7 +304,7 @@ var wow = new WOW({
 		menu: '.menu'	,
 		// scrollBar: true,
 		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-		afterLoad: function(origin, destination, direction){
+		onLeave: function(origin, destination, direction){
 			var loadedSection = destination.item;
 			// console.log(this);
 			if(loadedSection.classList.contains('section--dark') ) {

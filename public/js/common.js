@@ -306,7 +306,7 @@ function eventHandler() {
 			percentage: 62,
 			property: 'translate'
 		},
-		afterLoad: function afterLoad(origin, destination, direction) {
+		onLeave: function onLeave(origin, destination, direction) {
 			var loadedSection = destination.item; // console.log(this);
 
 			if (loadedSection.classList.contains('section--dark')) {

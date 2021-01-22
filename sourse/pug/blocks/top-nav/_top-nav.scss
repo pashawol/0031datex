@@ -4,6 +4,9 @@
 .top-nav { 
 	// opacity: 0;
 	left: 0;
+	@include media-breakpoint-between(md, xl) {
+		position: absolute;
+	}
 	position: fixed; 
 	top: 0;
 	left: 0;
@@ -42,7 +45,7 @@
 
 			width: rem(200);
 		}
-	
+		font-weight: bold;
 	}
 	.logo-icon{
 		max-width: rem(160);
@@ -88,7 +91,11 @@
 	align-items: center;
 	a{
 		position: relative;
-		display: block;
+			@include media-breakpoint-up(xl) {
+
+				display: block;
+			}
+			display: inline-block;
 		padding: rem(2) 0;
 		font-weight: 600;
 		&::before{

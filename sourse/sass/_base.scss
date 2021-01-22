@@ -68,6 +68,7 @@ body {
 
 	&.fixed {
 		overflow: hidden !important;
+		overflow-y: scroll !important;
 		position: absolute;
 		width: 100%;
 		left: 0;

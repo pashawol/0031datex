@@ -1,6 +1,9 @@
 
 	// start .sWhy
 	.sWhy {
+		.circle--right{
+			background: radial-gradient(50% 50% at 50% 50%, rgba(255, 41, 74, 0.15) 0%, rgba(0, 41, 255, 0) 100%);
+		}
 		.el-img{
 			 
 			&--1{ 

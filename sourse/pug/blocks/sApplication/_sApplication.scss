@@ -1,6 +1,7 @@
 
 	// start .sApplication
 	.sApplication {
+		overflow: hidden;
 		@include media-breakpoint-up(xl) {
 
 			--sPB: #{rem(140)};

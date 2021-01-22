@@ -4,15 +4,18 @@
 	height: 100vw;
 	position: absolute;
 	@include a-cent(y);
-	background: radial-gradient(50% 50% at 50% 50%, rgba(0, 41, 255, 0.15) 0%, rgba(0, 41, 255, 0) 100%);
-opacity: 0.75;
-border-radius: 50%;
-pointer-events: none;
+	opacity: 0.75;
+	border-radius: 50%;
+	pointer-events: none;
 	&--left{
 		right: 50%;
+		background: radial-gradient(50% 50% at 50% 50%, rgba(0, 41, 255, 0.15) 0%, rgba(0, 41, 255, 0) 100%);
 	}
 	&--right{
 		left: 50%;
+		.circle--right{
+			background: radial-gradient(50% 50% at 50% 50%, rgba(255, 41, 74, 0.15) 0%, rgba(0, 41, 255, 0) 100%);
+		}
 	}
 }
 // .circle--left
