@@ -44,13 +44,13 @@
 			// 	height: 437px;
 			// }
 			
-			// &--7{
-			// 	--t: 20px;
-			// 	--l: auto;
-			// 	right: 0;
-			// 	// width: 437px;
-			// 	// height: 437px;
-			// }
+			&--7{
+				--t: 12%;
+				--l: auto;
+				right: 5%;
+				// width: 437px;
+				// height: 437px;
+			}
 			
 			// &--8{
 			// 	--t: calc(600px);
@@ -106,7 +106,11 @@
 			// 	// width: 437px;
 			// 	// height: 437px;
 			// } 
-
+			.el-img--13 {
+				--t: auto;
+				--l: 50%;
+				bottom: 2.5rem;
+			}
 			&--15{
 				--t: auto;
 				--l: auto;

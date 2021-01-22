@@ -7,6 +7,8 @@
 	opacity: 0.75;
 	border-radius: 50%;
 	pointer-events: none;
+	--animate-duration: 2s;
+
 	&--left{
 		right: 50%;
 		background: radial-gradient(50% 50% at 50% 50%, rgba(0, 41, 255, 0.15) 0%, rgba(0, 41, 255, 0) 100%);
@@ -22,6 +24,10 @@
 		// .circle.circle--right
 .el-img{
 	position: absolute;
+	@include media-breakpoint-down(lg) {
+		zoom: .6;
+	}
+	--animate-duration: 2s;
 	// pointer-events: none;
 	--t: 0;
 	--l: 0;
@@ -46,8 +52,7 @@
 		--t: calc(1 * 150px / 1);
 		@include media-breakpoint-down(sm){
 			--t: calc(1 * 30px / 1);
-
-			--l: calc(1 * 20px / 1);
+			--l: calc(50%);
 		}
 		--l: calc(1 * 120px / 1);
 	}

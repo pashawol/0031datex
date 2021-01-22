@@ -43,9 +43,10 @@ mixin sWhy(data)
 										.col-md-auto
 											+e.icon-wrap
 												img(src=`img/svg/why-${i}.svg`, alt="") 
-										.col(class="wow  animate__fadeInLeft" data-wow-delay="1.6s") 
-											p.ttu= t
-											p!= p
+										.col
+											div(class="wow  animate__fadeInLeft" data-wow-delay="1.6s") 
+												p.ttu= t
+												p!= p
 							+item(`1`,`законы`,`Учет в&nbsp;программе ведется согласно требованиям действующего законодательства&nbsp;РФ`)(class="wow  animate__fadeInRight " data-wow-delay=".6s")
 							+item(`2`,`КАЛЕНДАРЬ`,`Встроенный календарь помогает главному бухгалтеру вовремя подготовить необходимые отчеты`)(class="wow  animate__fadeInRight " data-wow-delay=".8s")
 							+item(`3`,`подсказки`,`Встроенная система подсказок работает как самоучитель и&nbsp;позволяет сразу приступить к&nbsp;работе`)(class="wow  animate__fadeInRight " data-wow-delay="1s")

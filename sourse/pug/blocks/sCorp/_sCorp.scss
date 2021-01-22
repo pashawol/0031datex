@@ -43,13 +43,21 @@
 			// 	height: 437px;
 			// }
 			
-			// &--7{
-			// 	--t: 20px;
-			// 	--l: auto;
-			// 	right: 0;
-			// 	// width: 437px;
-			// 	// height: 437px;
-			// }
+			&--7{
+				--t: 16%;
+				--l: 83.20833%;
+				// width: 437px;
+				// height: 437px;
+			}
+			&--71{
+				--t: 76%;
+				--l: 13.20833%;
+				img{
+					transform: rotateY(180deg);
+				}
+				// width: 437px;
+				// height: 437px;
+			}
 			
 			// &--8{
 			// 	--t: calc(600px);

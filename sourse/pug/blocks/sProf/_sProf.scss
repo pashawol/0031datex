@@ -30,8 +30,8 @@
 				right: 0;
 			}
 			&--5{
-				--t: calc(157px);
-				--l: calc(157px);
+				--t: calc(80%);
+				--l: calc(80%);
 			}
 			
 			&--6{
@@ -100,7 +100,7 @@
 				--t: auto;
 				--l: calc(100px );
 				// width: 437px;
-				bottom: rem(40); 
+				bottom: rem(50); 
 				// width: 437px;
 				// height: 437px;
 			} 
@@ -117,6 +117,20 @@
 					margin-bottom: 0;
 			}
 	
+		}
+		.sub-title{
+			position: relative;
+			.hit{
+				position: absolute;
+				right: 0;
+				@include media-breakpoint-up(lg) { 
+					top: -64px;
+					width: rem(128);
+				}
+				top: -40px;
+				width: rem(100);
+
+			}
 		}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
