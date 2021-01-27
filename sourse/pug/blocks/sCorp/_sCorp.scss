@@ -13,6 +13,7 @@
 			&--2{
 				--t: calc(100px);
 				--l: calc(100px);
+			 
 				.img-svg{
 					// transform: rotate(180deg);
 				}
@@ -48,6 +49,16 @@
 				--l: 83.20833%;
 				// width: 437px;
 				// height: 437px;
+				@include media-breakpoint-down(sm){
+					top: auto;
+					bottom: 40px;
+					right: 20px;
+					left: auto;
+					transform: rotateY(180deg);
+					img{
+						position: relative;
+					}
+				}
 			}
 			&--71{
 				--t: 76%;
@@ -119,6 +130,10 @@
 				--l: auto;
 				bottom: -40px;
 				right: 80px;
+				@include media-breakpoint-down(sm){
+					top: 80px;
+					bottom: auto;
+				}
 				// width: 437px;
 				// height: 437px;
 			} 

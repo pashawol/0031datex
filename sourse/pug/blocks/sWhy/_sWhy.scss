@@ -33,6 +33,11 @@
 			&--5{ 
 					--t: 15%;
 					--l: 52%; 
+					@include media-breakpoint-down(sm){
+						--t: 10%;
+						--l: 12%; 
+
+					}
 			}
 			
 			&--6{
@@ -41,6 +46,10 @@
 				right: rem(80);
 				width: 437px;
 				height: 437px;
+				@include media-breakpoint-down(sm){
+					zoom: 1;
+					right: -250px;
+				}
 			}
 			
 			&--7{

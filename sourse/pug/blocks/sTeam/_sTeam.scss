@@ -1,6 +1,50 @@
 
 	// start .sTeam
 	.sTeam {
+		.el-img{
+ 
+ 
+			&--2{ 
+			 
+					@include media-breakpoint-down(sm){
+						// --t: 80%;
+						// --l: 12%;
+						left: auto;
+						top: auto;
+						right: 40px;
+						top: 280px; 
+						.img-svg{
+							position: relative;
+							transform: rotate(180deg);
+						}
+					}
+			}
+			&--5{ 
+			 
+					@include media-breakpoint-down(sm){
+						--t: 80%;
+						--l: 12%; 
+
+					}
+			}
+			
+			&--6{
+			 
+				@include media-breakpoint-down(sm){
+					zoom: .4;
+					left: -250px;
+					// display: none;
+				}
+			}
+			&--7{
+			 
+				@include media-breakpoint-down(sm){
+					display: none;
+				}
+			}
+		 
+		}
+		
 		.circle--right{
 			background: radial-gradient(50% 50% at 50% 50%, rgba(255, 41, 74, 0.15) 0%, rgba(0, 41, 255, 0) 100%);
 		}

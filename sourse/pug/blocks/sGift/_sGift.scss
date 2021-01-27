@@ -31,10 +31,13 @@
 			// 	--l: auto;
 			// 	right: 0;
 			// }
-			// &--5{
-			// 	--t: calc(157px);
-			// 	--l: calc(157px);
-			// }
+			&--5{
+				@include media-breakpoint-down(sm){
+					--t: 100px;
+					--l: 80%;
+
+				}
+			}
 			
 			// &--6{
 			// 	--t: calc(357px);
@@ -48,6 +51,10 @@
 				--t: 12%;
 				--l: auto;
 				right: 5%;
+				@include media-breakpoint-down(sm){
+					--t: 82%;
+					
+				}
 				// width: 437px;
 				// height: 437px;
 			}
