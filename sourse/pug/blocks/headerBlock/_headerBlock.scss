@@ -24,6 +24,10 @@
 		// .circle.circle--right
 .el-img{
 	position: absolute;
+	@include media-breakpoint-down(xxl) {
+		zoom: .7;
+
+	}
 	@include media-breakpoint-down(lg) {
 		zoom: .6;
 	}

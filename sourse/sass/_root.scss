@@ -8,7 +8,7 @@
 	@include media-breakpoint-only(xl) {
 		--sp: #{rem(0)};
 		--sPT: #{rem(80)};
-		--sPB: #{rem(80)};
+		--sPB: #{rem(0)};
 	}
 	--fontSizeBase: 14px;
 	

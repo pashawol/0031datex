@@ -139,6 +139,9 @@
 				display: inline;
 			}
 			@include media-breakpoint-only(xl){
+				max-width: 1000px;
+				margin-left: auto;
+				margin-right: auto;
 				margin-bottom: calc(var(--sp) + #{rem(24px)}); 
 			}
 			margin-bottom: calc(var(--sp) + #{rem(54px)});
@@ -171,6 +174,9 @@
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	&__slider{
+		@include media-breakpoint-only(xl) {
+			max-width: 1000px;
+		}
 		@include media-breakpoint-up(md) {
 			max-width: none;
 		}

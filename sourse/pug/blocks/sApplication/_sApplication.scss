@@ -11,6 +11,9 @@
 		}
 
 		.pic-abs{  
+			@include media-breakpoint-only(xl) {
+			margin-top: -5%;
+			}
 			@include media-breakpoint-up(xxl) { 
 					min-height: rem(813);
 					min-width: rem(813); 

@@ -259,6 +259,9 @@ function eventHandler() {
 			},
 			1200: {
 				slidesPerView: 4,
+				spaceBetween: 80
+			},
+			1440: {
 				spaceBetween: 110
 			}
 		}
