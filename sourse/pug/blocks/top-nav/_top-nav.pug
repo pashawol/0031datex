@@ -32,7 +32,7 @@ mixin top-nav()
 						| 8 (800) 500-57-48
 				.col-auto.d-none.d-md-block
 					+e.btn.link-modal(href="#modal-call" data-title="заказать звонок" data-text="Заполните форму, и мы свяжемся с Вами сразу же, как только получим заявку.") Заказать звонок
-				.col-auto.d-xl-none
+				+e.toggle-wrap.col-auto.d-xl-none
 					+b.toggle-menu-mobile.link-modal(href="#modal-menu")
 						span
 				

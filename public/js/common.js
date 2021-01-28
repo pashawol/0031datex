@@ -282,7 +282,7 @@ function eventHandler() {
 		swiper5.slideTo(i);
 	});
 	var wow = new WOW({
-		// mobile: false,
+		mobile: false,
 		animateClass: 'animate__animated',
 		live: true
 	});

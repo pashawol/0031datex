@@ -283,7 +283,7 @@ $(document).on('click',  ".sFaq__item" , function(){
 })
 
 var wow = new WOW({
-	// mobile: false,
+	mobile: false,
 	animateClass: 'animate__animated',
 	live: true
 });

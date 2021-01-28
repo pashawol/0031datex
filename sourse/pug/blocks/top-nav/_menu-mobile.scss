@@ -7,7 +7,13 @@ $h: em(2);
 	width: rem(45) !important;
 	max-width: rem(45) !important;
 	min-width: rem(45) !important;
+	@include media-breakpoint-down(xl) {
+		height: rem(50);
+		width: rem(50) !important;
+		max-width: rem(50) !important;
+		min-width: rem(50) !important;
 
+	}
 	min-width: 1px;
 	position: relative; 
 	font-size: 32px; 

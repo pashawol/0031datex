@@ -4,8 +4,16 @@
 .top-nav { 
 	// opacity: 0;
 	left: 0;
-	@include media-breakpoint-between(md, xl) {
+	@include media-breakpoint-down(xl) {
 		position: absolute;
+		.toggle-menu-mobile{
+			position: fixed;
+			top: 30px;
+			right: 15px;
+		}
+		&__toggle-wrap{
+			width: 80px;
+		}
 	}
 	position: fixed; 
 	top: 0;
