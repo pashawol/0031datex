@@ -262,6 +262,7 @@ function eventHandler() {
 				spaceBetween: 80
 			},
 			1440: {
+				slidesPerView: 4,
 				spaceBetween: 110
 			}
 		}
